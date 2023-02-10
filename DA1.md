@@ -41,9 +41,9 @@ We can now add in-text citations and bibliographies to our research paper, thesi
 
 Github is a platform for sharing files or source code with others. Version control is one of the main uses of GitHub. When more than one individual is engaged in a project, it is beneficial. Imagine that a group of software developers are working on a website and that they all need to update their codes at the same time. In this situation, Github aids in the development of a central repository where all code files can be uploaded, edited, and managed.
 
-### Creating a repository
+### Creating a Repository
 
-The project is kept in storage at a repository. It could be local, like a folder on our computer, or it might be an internet host like GitHub or another. Code files, text files, photos, or any other type of file can be stored in a repository. This GitHub repository acts as a remote repository. To create a Github repository, follow these steps: 
+The project is kept in storage at a repository. It could be local, like a folder on our computer, or it might be an internet host like GitHub or another. Code files, text files, photos, or any other type of file can be stored in a repository. This GitHub repository acts as a remote repository. To create a Github repository, we follow these steps: 
 
 * Go to the link: https://github.com/ . Fill the sign up form and click on "Sign up for Github".
 * Click on "Start a new project".
@@ -56,7 +56,31 @@ In contrast to a private repository, which allows users to control who can see i
 
 Branches enable concurrent work on many versions of a repository. Imagine that we want to add a new feature—which is still in development—but we are unsure whether to update our primary project or not. Git branching comes to the rescue in this situation. Using branches, we can switch back and forth between a project's many stages and versions. To test the new feature in the aforementioned scenario, we can establish a new branch without affecting the main branch. When we are finished, we may combine the modifications from the new branch with those from the main branch. The master branch, which is present in we repository by default, is used as the main branch in this case.
 
-<center><img src="https://assets-global.website-files.com/622642781cd7e96ac1f66807/62d0ef2b68ea1652c722e7a6_image-10.png"></center>
+<center><img src="https://miro.medium.com/max/1400/0*RiQZEGNoU9HmyjFP.png"></center>
+
+### Cloning our Repository
+
+Next, we clone our newly created repository from GitHub to your local computer. From our repository page on GitHub, click the green button labeled Clone or download, and in the "Clone with HTTPs" section, copy the URL for our repository.
+
+Next, on our local machine, we open our bash shell and change our current working directory to the location where we would like to clone your repository. 
+
+For example, on a Unix based system, if we wanted to have our repository in our Documents folder, we change directories as follows:
+
+```console
+cd Documents
+```
+
+Once we have navigated to the directory where you want to put your repository, we can use:
+
+```console
+git clone https://github.com/URL-TO-REPO-HERE
+````
+
+The git clone command copies our repository from GitHub to our local computer. This is a git specific command.
+
+```console
+git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
+```
 
 ### Performing Git Operations
 
@@ -76,7 +100,7 @@ The most significant GitHub command is pull. It details the file's modifications
 
 * Click the ‘Pull requests’ 
 * Click ‘New pull request’.
-* Once we click on pull request, select the branch and click ‘readme- changes’ file to view changes between the two files present in our repository.
+* Once we click on pull request, we select the branch and click ‘readme- changes’ file to view changes between the two files present in our repository.
 * Click "Create pull request".
 
 #### Merge Command
