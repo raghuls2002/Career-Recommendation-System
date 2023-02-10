@@ -10,19 +10,19 @@ With the help of the free, open-source software Zotero, you can quickly gather, 
 
 There are many options available in Zotero for adding sources to your Library. The many methods for adding sources to your Zotero Library are described below: 
 
-* **Browser Add-on (Connector)** 
+* **Browser Add-on (Connector)** <br>
   This will be the main method of adding sources from databases, the library catalogue, and free online resources.
   
-* **Search Results List** 
+* **Search Results List** <br> 
   When you wish to add numerous sources from a list of search results from a catalogue, database, or public web, use this option.
   
-* **Google Schoolar** 
+* **Google Schoolar** <br> 
   Normally, you should use the Browser Connector and navigate to the original source. That isn't always doable. Here is a different approach taken straight from the search results page.
   
-* **PDF Files** 
+* **PDF Files** <br>
   This is a quick and simple approach to add a source record to your Library if you have readable PDF files.
   
-* **Manually Add a Source** 
+* **Manually Add a Source** <br>
   This will be the main method of adding sources from databases, the library catalogue, and free online resources.
   
 ## Github Desktop
