@@ -25,6 +25,7 @@ There are many options available in Zotero for adding sources to your Library. T
 * **Manually Add a Source** <br>
   This will be the main method of adding sources from databases, the library catalogue, and free online resources.
 <br>
+
 ## Github Desktop
 
 Github is a platform for sharing files or source code with others. Version control is one of the main uses of GitHub. When more than one individual is engaged in a project, it is beneficial. Imagine that a group of software developers are working on a website and that they all need to update their codes at the same time. In this situation, Github aids in the development of a central repository where all code files can be uploaded, edited, and managed.
