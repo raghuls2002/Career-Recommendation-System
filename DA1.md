@@ -34,6 +34,7 @@ It's not always possible to add sources correctly when adding them to your Zoter
 ### Citing and References
 
 You can now add in-text citations and bibliographies to your research paper, thesis, dissertation, book chapter, book, or article once you have sources in your Zotero Library.
+
 <br>
 
 ## Github Desktop
@@ -82,15 +83,17 @@ The most significant GitHub command is pull. It details the file's modifications
 
 Multiple commit sequences will be combined into a single, unified history by git merge. Git merge is most frequently employed to combine two branches. This document will emphasise this branch merging pattern in the examples that follow. In these cases, git merge will look for a common base commit between two commit pointers, typically the branch tips. The changes from each queued merge commit sequence will be combined into a new "merge commit" as soon as Git discovers a common base commit.
 
-### Zettlr
+<br>
+
+## Zettlr
 
 Zettlr is a markdown editor for writing articles, ebooks, and other types of content across platforms. It is modelled after the personal knowledge management and note-taking Zettelkasten system. It supports presentations (using the reveal.js framework), autocorrection, snippets, localization, math formulae, citations, and custom templates.
 
-#### Folder Structure
+### Folder Structure
 
 The appeal of a Zettelkasten is that the hierarchy of your content develops organically as a result of your links, so you don't need to know it in advance. Thus, your Zettelkasten  is just a single folder with all files dumped into it. Ideally, you will be able to navigate using only your links rather than file names.
 
-#### Basic Zettls and links
+### Basic Zettls and links
 
 The structure of a fundamental Zettel and the internal connections between them form the basis of every Zettelkasten. Zettlr offers all the necessary tools, but I don't believe the default configurations are suitable for a sizable Zettelkasten that is constantly expanding. Our fundamental needs are, in my opinion:
 
@@ -102,6 +105,6 @@ The structure of a fundamental Zettel and the internal connections between them 
 
 This means that whenever possible, we should link using IDs rather than file names or document titles because they can change as a Zettel expands or becomes more specific. In that scenario, we
 
-#### Tags
+### Tags
 
 You can easily find Zettel by using sing tags for meta information, regardless of the relationship between them that is established by links and their content. I use this, for instance, to gather all Zettel from a specific lecture for review or to flag all Zettel that requires revision. Conveniently, you can add these tags as keywords in the YAML-header, where they are clearly separated from the Zettel's content and display the meta-data that this Zettel contains.
