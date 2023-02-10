@@ -1,7 +1,5 @@
 # TARP Assessment - 1
 
-# Tools used:
-
 ## Zotero
 
 With the help of the free, open-source software Zotero, you can quickly gather, arrange, cite, and share sources. You can add source data to your library via a browser extension. 
@@ -25,6 +23,19 @@ There are many options available in Zotero for adding sources to your Library. T
 * **Manually Add a Source** <br>
   This will be the main method of adding sources from databases, the library catalogue, and free online resources.
 <br>
+
+### Modifying Source Records
+
+It's not always possible to add sources correctly when adding them to your Zotero Library. The source records' entire content can be changed. Changing the source type, author's name, and title case is easy with the help of the following quick tips.
+
+* In your Zotero Library, select the source
+* In the right hand pane, click the Source Type drop down menu
+* Select the appropriate source type
+
+### Citing and References
+
+You can now add in-text citations and bibliographies to your research paper, thesis, dissertation, book chapter, book, or article once you have sources in your Zotero Library.
+
 
 ## Github Desktop
 
@@ -70,4 +81,8 @@ The most significant GitHub command is pull. It details the file's modifications
 
 #### Merge Command
 
-### Cloning and Forking GitHub Repository
+Multiple commit sequences will be combined into a single, unified history by git merge. Git merge is most frequently employed to combine two branches. This document will emphasise this branch merging pattern in the examples that follow. In these cases, git merge will look for a common base commit between two commit pointers, typically the branch tips. The changes from each queued merge commit sequence will be combined into a new "merge commit" as soon as Git discovers a common base commit.
+
+### 
+
+
