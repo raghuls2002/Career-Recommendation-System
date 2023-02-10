@@ -1,9 +1,30 @@
-# TARP group project
+# TARP Assessment - 1
+
+# Tools used:
 
 ## Zotero
 
+With the help of the free, open-source software Zotero, you can quickly gather, arrange, cite, and share sources. You can add source data to your library via a browser extension. 
 
+### Adding Sources
 
+There are many options available in Zotero for adding sources to your Library. The many methods for adding sources to your Zotero Library are described below: 
+
+* **Browser Add-on (Connector)** 
+  This will be the main method of adding sources from databases, the library catalogue, and free online resources.
+  
+* **Search Results List** 
+  When you wish to add numerous sources from a list of search results from a catalogue, database, or public web, use this option.
+  
+* **Google Schoolar** 
+  Normally, you should use the Browser Connector and navigate to the original source. That isn't always doable. Here is a different approach taken straight from the search results page.
+  
+* **PDF Files** 
+  This is a quick and simple approach to add a source record to your Library if you have readable PDF files.
+  
+* **Manually Add a Source** 
+  This will be the main method of adding sources from databases, the library catalogue, and free online resources.
+  
 ## Github Desktop
 
 Github is a platform for sharing files or source code with others. Version control is one of the main uses of GitHub. When more than one individual is engaged in a project, it is beneficial. Imagine that a group of software developers are working on a website and that they all need to update their codes at the same time. In this situation, Github aids in the development of a central repository where all code files can be uploaded, edited, and managed.
