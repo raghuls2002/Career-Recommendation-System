@@ -22,7 +22,6 @@ There are many options available in Zotero for adding sources to your Library. T
   
 * **Manually Add a Source** <br>
   This will be the main method of adding sources from databases, the library catalogue, and free online resources.
-<br>
 
 ### Modifying Source Records
 
@@ -35,7 +34,7 @@ It's not always possible to add sources correctly when adding them to your Zoter
 ### Citing and References
 
 You can now add in-text citations and bibliographies to your research paper, thesis, dissertation, book chapter, book, or article once you have sources in your Zotero Library.
-
+<br>
 
 ## Github Desktop
 
