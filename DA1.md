@@ -107,6 +107,10 @@ The most significant GitHub command is pull. It details the file's modifications
 
 Multiple commit sequences will be combined into a single, unified history by git merge. Git merge is most frequently employed to combine two branches. This document will emphasise this branch merging pattern in the examples that follow. In these cases, git merge will look for a common base commit between two commit pointers, typically the branch tips. The changes from each queued merge commit sequence will be combined into a new "merge commit" as soon as Git discovers a common base commit.
 
+#### Git Workflow
+
+<center><img src="https://crunchify.com/wp-content/uploads/2017/09/Github-WorkFlow-Tips-Crunchify-Tips.png"></center>
+
 <br>
 
 ## Zettlr
