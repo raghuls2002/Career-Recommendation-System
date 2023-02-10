@@ -33,5 +33,5 @@ The most significant GitHub command is pull. It details the file's modifications
 * Click ‘New pull request’.
 * Once you click on pull request, select the branch and click ‘readme- changes’ file to view changes between the two files present in our repository.
 * Click "Create pull request".
-* 
+
 ### Pull Command
