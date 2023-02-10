@@ -95,7 +95,7 @@ The appeal of a Zettelkasten is that the hierarchy of your content develops orga
 
 ### Basic Zettls and links
 
-The structure of a fundamental Zettel and the internal connections between them form the basis of every Zettelkasten. Zettlr offers all the necessary tools, but I don't believe the default configurations are suitable for a sizable Zettelkasten that is constantly expanding. Our fundamental needs are, in my opinion:
+The structure of a fundamental Zettel and the internal connections between them form the basis of every Zettelkasten. Zettlr offers all the necessary tools. The fundamental needs are:
 
 * a special way to refer to a particular Zettel
 
@@ -103,8 +103,8 @@ The structure of a fundamental Zettel and the internal connections between them 
 
 * a strategy for dealing with the same-named Zettel (the same topic might be a thing in different areas)
 
-This means that whenever possible, we should link using IDs rather than file names or document titles because they can change as a Zettel expands or becomes more specific. In that scenario, we
+This means that whenever possible, you should link using IDs rather than file names or document titles because they can change as a Zettel expands or becomes more specific. 
 
 ### Tags
 
-You can easily find Zettel by using sing tags for meta information, regardless of the relationship between them that is established by links and their content. I use this, for instance, to gather all Zettel from a specific lecture for review or to flag all Zettel that requires revision. Conveniently, you can add these tags as keywords in the YAML-header, where they are clearly separated from the Zettel's content and display the meta-data that this Zettel contains.
+You can easily find Zettel by using sing tags for meta information, regardless of the relationship between them that is established by links and their content. You can use this to gather all Zettel from a specific lecture for review or to flag all Zettel that requires revision. Conveniently, you can add these tags as keywords in the YAML-header, where they are clearly separated from the Zettel's content and display the meta-data that this Zettel contains.
