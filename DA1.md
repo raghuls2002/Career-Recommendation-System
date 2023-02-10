@@ -1,4 +1,22 @@
-# **TARP Assessment - 1**
+**Name :** Raghul.S <br>
+**Reg.no :** 20BCE0915<br>
+**Course code :** CSE1901<br>
+**Class Nbr :** VL2022230505138<br>
+**Faculty Name :** Manoov R <br>
+
+# **TARP Assessment - 1** <br><br> **Skill-based Career Recommendation System**
+
+## **Project Description**
+
+A student may find it challenging to choose the correct job route because they are going
+through a number of different stages at this time, including peer pressure and parental
+pressure. Therefore, a model that directs the student based on his or her profile and skill ratings
+can be designed to assist pupils in such situations. An algorithm can be used to pull special
+characteristics from the profile and forecast both the best career option and the career options
+one should avoid choosing. This will enable the learner to succeed in the area where he or she
+is most talented.
+
+## **Tools used**
 
 Some of the tools used in this project are: 
 
@@ -54,7 +72,7 @@ The project is kept in storage at a repository. It could be local, like a folder
 
 In contrast to a private repository, which allows users to control who can see its contents, the default GitHub repository is public, making its contents accessible to anybody.
 
-### **Creating Branches
+### **Creating Branches**
 
 Branches enable concurrent work on many versions of a repository. Imagine that we want to add a new feature—which is still in development—but we are unsure whether to update our primary project or not. Git branching comes to the rescue in this situation. Using branches, we can switch back and forth between a project's many stages and versions. To test the new feature in the aforementioned scenario, we can establish a new branch without affecting the main branch. When we are finished, we may combine the modifications from the new branch with those from the main branch. The master branch, which is present in we repository by default, is used as the main branch in this case.
 
