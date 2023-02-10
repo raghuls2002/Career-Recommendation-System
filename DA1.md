@@ -2,6 +2,8 @@
 
 ## Zotero
 
+
+
 ## Github Desktop
 
 Github is a platform for sharing files or source code with others. Version control is one of the main uses of GitHub. When more than one individual is engaged in a project, it is beneficial. Imagine that a group of software developers are working on a website and that they all need to update their codes at the same time. In this situation, Github aids in the development of a central repository where all code files can be uploaded, edited, and managed.
@@ -23,4 +25,13 @@ Branches enable concurrent work on many versions of a repository. Imagine that w
 
 <center><img src="https://i0.wp.com/digitalvarys.com/wp-content/uploads/2019/06/GIT-Branchand-its-Operations.png?fit=1024%2C563&ssl=1"></center>
 
-## 
+### Commit Command
+
+The most significant GitHub command is pull. It details the file's modifications and invites other contributors to view it and merge it into the master branch. Once the commit is done, anyone can pull the file and can start a discussion over it. Once its all done, you can merge the file. Pull command compares the changes which are done in the file and if there are any conflicts, you can manually resolve it. Now let us see different steps involved to pull request in GitHub.
+
+* Click the ‘Pull requests’ 
+* Click ‘New pull request’.
+* Once you click on pull request, select the branch and click ‘readme- changes’ file to view changes between the two files present in our repository.
+* Click "Create pull request".
+* 
+### Pull Command
