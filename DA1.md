@@ -21,6 +21,6 @@ In contrast to a private repository, which allows users to control who can see i
 
 Branches enable concurrent work on many versions of a repository. Imagine that we want to add a new feature—which is still in development—but we are unsure whether to update our primary project or not. Git branching comes to the rescue in this situation. Using branches, you can switch back and forth between a project's many stages and versions. To test the new feature in the aforementioned scenario, we can establish a new branch without affecting the main branch. When we are finished, we may combine the modifications from the new branch with those from the main branch. The master branch, which is present in your repository by default, is used as the main branch in this case.
 
-![GIT Branch and its Operations](https://i0.wp.com/digitalvarys.com/wp-content/uploads/2019/06/GIT-Branchand-its-Operations.png?fit=1024%2C563&ssl=1)<img src="https://i0.wp.com/digitalvarys.com/wp-content/uploads/2019/06/GIT-Branchand-its-Operations.png?fit=1024%2C563&ssl=1" width="900" height="700">
+![GIT Branch and its Operations](https://i0.wp.com/digitalvarys.com/wp-content/uploads/2019/06/GIT-Branchand-its-Operations.png?fit=1024%2C563&ssl=1)<img src="https://i0.wp.com/digitalvarys.com/wp-content/uploads/2019/06/GIT-Branchand-its-Operations.png?fit=1024%2C563&ssl=1" width="900" height="500">
 
 ## 
