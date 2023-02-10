@@ -1,5 +1,7 @@
 # TARP Assessment - 1
 
+Some of the tools used in this project are: 
+
 ## Zotero
 
 With the help of the free, open-source software Zotero, we can quickly gather, arrange, cite, and share sources. We can add source data to your library via a browser extension. 
@@ -136,3 +138,6 @@ This means that whenever possible, we should link using IDs rather than file nam
 ### Tags
 
 We can easily find Zettel by using sing tags for meta information, regardless of the relationship between them that is established by links and their content. We can use this to gather all Zettel from a specific lecture for review or to flag all Zettel that requires revision. Conveniently, we can add these tags as keywords in the YAML-header, where they are clearly separated from the Zettel's content and display the meta-data that this Zettel contains.
+
+<br>
+
