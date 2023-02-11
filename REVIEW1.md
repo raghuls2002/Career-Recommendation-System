@@ -120,7 +120,9 @@ accuracy, logarithmic loss, F1 score, confusion matrix etc.
 
 Evalute various ML platforms and choose the most suitable one.
 
-#### **3.2 Installing Anaconda and Spyder IDE**
+#### **3.2 Installing Python and IDE**
+
+Installing Anaconda Python distribution and Spyder IDE.
 
 #### **3.3 Installing Advanced Python Modules**
 
@@ -148,10 +150,12 @@ related to the project.
 
 #### **4.3 Train Model**
 
+* Tune hyperparamaters of thr training alogorithm based on theoretical deductions.
+* Scale the numerical data down to a scale from zero to one (Batch Normalization).
+
 #### **4.4 Test Model**
 
-* Test and evalutate the model based on various metrics such as classification metrics,
-regression metrics, ranking metrics, statistical metrics, NLP metrics etc.
+* Once the model has been trained, performance is gauged according to a confusion matrix and precision/accuracy metrics.
 
 ### **5. Software Integration & testing**
 
@@ -160,7 +164,7 @@ regression metrics, ranking metrics, statistical metrics, NLP metrics etc.
 * Integrate frontend and backend
 * Perform different types of software testing (System Testing, Acceptance Testing, Smoke
 Testing, Regression Testing, Performance Testing, Security Testing) on all features of the WebApp.
-* Test the webApp in different environments.
+* Deploy and test the webApp in different environments.
 
 ### **6. Consulation From Mentor**
 
