@@ -150,7 +150,7 @@ related to the project.
 
 #### **4.3 Train Model**
 
-* Tune hyperparamaters of thr training alogorithm based on theoretical deductions.
+* Tune hyperparamaters of the training alogorithm based on theoretical deductions.
 * Scale the numerical data down to a scale from zero to one (Batch Normalization).
 
 #### **4.4 Test Model**
