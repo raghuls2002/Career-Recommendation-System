@@ -86,3 +86,105 @@ and custom templates.
 <br>
 
 ## **Project Workbreakdown**
+
+### **1. Initial Planning & Project Proposal**
+
+#### **1.1 Project Scope**
+
+Determine the project goals & objectives, project deliverables, project constraints,
+assumptions and project milestones.
+
+#### **1.2 Work Breakdown Structure**
+
+Construct a heirarchial decomposition of the project into phases, deliverables, and work
+packages.
+
+### **2. Evaluate Project Ideas**
+
+#### **2.1 Literature Review**
+
+Create an overview of the previously published works on the topic.
+
+#### **2.2 Evaluate Datesets**
+
+Assess various datasets and find a dataset which meets the criteria outlined in the assessment.
+
+#### **2.3 Evaluate Machine Learning Methods**
+
+Train, test and validate different algorithms based on a set of metrics such as classification
+accuracy, logarithmic loss, F1 score, confusion matrix etc.
+
+### **3. Preparing Project Environment**
+
+#### **3.1 Selecting ML Platform**
+
+Evalute various ML platforms and choose the most suitable one.
+
+#### **3.2 Installing Anaconda and Spyder IDE**
+
+#### **3.3 Installing Advanced Python Modules**
+
+Install various python modules like numpPy, Django, Flask , Matplotlib and pandas which are
+related to the project.
+
+### **4. Machine Learning Model**
+
+#### **4.1 Build ML Model**
+
+* Contextualise machine learning.
+* Explore the data and choose the type of algorithm
+* Prepare and clean the dataset
+* Split the prepared dataset and perform cross validation
+* Perform machine learning optimisation
+* Deploy the model
+
+#### **4.2 Data Pre-Processing**
+
+* Import libraries and datasets
+* Find any missing data
+* Encoding categorical data
+* Splitting dataset into training and test set
+* Feature scaling
+
+#### **4.3 Train Model**
+
+#### **4.4 Test Model**
+
+* Test and evalutate the model based on various metrics such as classification metrics,
+regression metrics, ranking metrics, statistical metrics, NLP metrics etc.
+
+#### **5. Software Integration & testing**
+
+* Design user interface
+* Develop an Web Application for the user interface
+* Integrate frontend and backend
+* Perform different types of software testing (System Testing, Acceptance Testing, Smoke
+Testing, Regression Testing, Performance Testing, Security Testing) on all features of the WebApp.
+* Test the webApp in different environments.
+
+#### **6. Consulation From Mentor**
+
+* Review 1
+* Review 2
+* Review 3
+
+#### **7. Results and Final Poject Submission**
+* Present results
+* Reflection
+* Conclusion
+* Creating Final Review Document
+* Creating Supporting Documents
+
+## **References**
+
+* Qing Wan and Lin Ye, "Career Recommendation for College Students Based on Deep
+Learning and Machine Learning "
+
+* Shivraj Hulbatte, Amit Wabale, Suraj Patil, Nikhilkumar Sathe, "Enhanced Job
+Recommendation System"
+
+* G.Mahalakshmi, A.Arun Kumar , B.Senthilnayaki, J.Duraimurugan, "Job Recommendation
+System Based on Skill Sets"
+
+* Aritra Ghosh, Beverly Woolf, Shlomo Zilberstein, Andrew Lan, "Skill-based Career Path
+Modeling and Recommendation"
