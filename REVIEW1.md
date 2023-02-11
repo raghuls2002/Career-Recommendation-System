@@ -4,7 +4,7 @@
 **Class Nbr :** VL2022230505138<br>
 **Faculty Name :** Manoov R <br>
 
-# **Review - 1**: **Skill-based Career Recommendation System**
+# **Review - 1** : **Skill-based Career Recommendation System**
 
 ## **Abstract**
 
@@ -20,6 +20,7 @@ candidates, need a Job recommendation that
 analyses the skills to recommend a suitable job for
 the candidate. The solution is to design a system
 that reads a resume and their skills.
+<br>
 
 ## **Introduction**
 
@@ -30,7 +31,6 @@ can be designed to assist pupils in such situations. An algorithm can be used to
 characteristics from the profile and forecast both the best career option and the career options
 one should avoid choosing. This will enable the learner to succeed in the area where he or she
 is most talented.
-
 <br>
 
 This skill-based career recommendation system focuses on predicting the suitable jobs for the
@@ -39,8 +39,9 @@ resumes to predict accurately. This application can be used by any candidates wh
 who want to know about their suitable jobs and to improve themselves with both soft skills and
 hard skills. It will be helpful to them by not wasting their time searching for jobs. They can also
 grow their skills in their domain and grow faster in their domain.
+<br>
 
-## **Tools/Software Identified**
+## **Software Tools Identified**
 
 * **Anaconda** <br> Anaconda is a distribution of the Python and R programming languages for scientific computing that aims to simplify package management and deployment.
 
@@ -60,3 +61,20 @@ modelled after the personal knowledge management and note-taking Zettelkasten sy
 presentations (using the reveal.js framework), autocorrection, snippets, localization, math formulae, citations,
 and custom templates.
 
+### **Python Libraries**
+
+* **Numpy** <br> NumPy is a library for the Python programming language, adding support for large, multi-dimensional arrays and matrices, along with a large collection of high-level mathematical functions to operate on these arrays.
+
+* **Flask** <br> Flask (source code) is a Python web framework built with a small core and easy-to-extend philosophy.
+
+* **Django** <br> Django  is a free and open-source, Python-based web framework that follows the model–template–views (MTV) architectural pattern.
+
+* **Matplotlib** <br> Matplotlib is a plotting library for the Python programming language and its numerical mathematics extension NumPy. It provides an object-oriented API for embedding plots into applications using general-purpose GUI toolkits like Tkinter, wxPython, Qt, or GTK. 
+
+* **Scikit-learn** <br> scikit-learn is a free software machine learning library for the Python programming language that features various classification, regression and clustering algorithms including support-vector machines, random forests, gradient boosting, k-means and DBSCAN, and is designed to interoperate with the Python numerical and scientific libraries NumPy and SciPy. 
+
+* **Pandas** <br> pandas is a software library written for the Python programming language for data manipulation and analysis that offers data structures and operations for manipulating numerical tables and time series. 
+
+<br>
+
+## **Project Workbreakdown**
