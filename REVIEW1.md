@@ -20,6 +20,7 @@ candidates, need a Job recommendation that
 analyses the skills to recommend a suitable job for
 the candidate. The solution is to design a system
 that reads a resume and their skills.
+
 <br>
 
 ## **Introduction**
@@ -31,7 +32,6 @@ can be designed to assist pupils in such situations. An algorithm can be used to
 characteristics from the profile and forecast both the best career option and the career options
 one should avoid choosing. This will enable the learner to succeed in the area where he or she
 is most talented.
-<br>
 
 This skill-based career recommendation system focuses on predicting the suitable jobs for the
 candidates. It uses machine learning models to find similarities between jobs description and
@@ -39,6 +39,7 @@ resumes to predict accurately. This application can be used by any candidates wh
 who want to know about their suitable jobs and to improve themselves with both soft skills and
 hard skills. It will be helpful to them by not wasting their time searching for jobs. They can also
 grow their skills in their domain and grow faster in their domain.
+
 <br>
 
 ## **Software Tools Identified**
