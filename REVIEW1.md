@@ -21,6 +21,7 @@ analyses the skills to recommend a suitable job for
 the candidate. The solution is to design a system
 that reads a resume and their skills.
 
+
 <br>
 
 ## **Introduction**
@@ -75,6 +76,8 @@ and custom templates.
 * **Scikit-learn** <br> scikit-learn is a free software machine learning library for the Python programming language that features various classification, regression and clustering algorithms including support-vector machines, random forests, gradient boosting, k-means and DBSCAN, and is designed to interoperate with the Python numerical and scientific libraries NumPy and SciPy. 
 
 * **Pandas** <br> pandas is a software library written for the Python programming language for data manipulation and analysis that offers data structures and operations for manipulating numerical tables and time series. 
+
+
 
 <br>
 
