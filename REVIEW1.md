@@ -153,7 +153,7 @@ related to the project.
 * Test and evalutate the model based on various metrics such as classification metrics,
 regression metrics, ranking metrics, statistical metrics, NLP metrics etc.
 
-#### **5. Software Integration & testing**
+### **5. Software Integration & testing**
 
 * Design user interface
 * Develop an Web Application for the user interface
@@ -162,13 +162,13 @@ regression metrics, ranking metrics, statistical metrics, NLP metrics etc.
 Testing, Regression Testing, Performance Testing, Security Testing) on all features of the WebApp.
 * Test the webApp in different environments.
 
-#### **6. Consulation From Mentor**
+### **6. Consulation From Mentor**
 
 * Review 1
 * Review 2
 * Review 3
 
-#### **7. Results and Final Poject Submission**
+### **7. Results and Final Poject Submission**
 * Present results
 * Reflection
 * Conclusion
