@@ -65,6 +65,8 @@ modelled after the personal knowledge management and note-taking Zettelkasten sy
 presentations (using the reveal.js framework), autocorrection, snippets, localization, math formulae, citations,
 and custom templates.
 
+![](./assets/PPT/Software_Tools.png)
+
 ### **Python Libraries**
 
 * **Numpy** <br> NumPy is a library for the Python programming language, adding support for large, multi-dimensional arrays and matrices, along with a large collection of high-level mathematical functions to operate on these arrays.
@@ -79,7 +81,7 @@ and custom templates.
 
 * **Pandas** <br> pandas is a software library written for the Python programming language for data manipulation and analysis that offers data structures and operations for manipulating numerical tables and time series. 
 
-![](./assets/python_libraries.png)
+![](./assets/PPT/python_libraries.png)
 
 <br>
 
