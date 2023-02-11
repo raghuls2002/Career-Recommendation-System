@@ -85,7 +85,7 @@ and custom templates.
 
 <br>
 
-## **Project Workbreakdown**
+## **Project Work Breakdown**
 
 ### **1. Initial Planning & Project Proposal**
 
