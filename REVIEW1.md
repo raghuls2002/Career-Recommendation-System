@@ -22,6 +22,8 @@ the candidate. The solution is to design a system
 that reads a resume and their skills.
 
 
+![](https://www.agilitypr.com/wp-content/uploads/2020/10/socialpro-1.jpg)
+
 <br>
 
 ## **Introduction**
