@@ -171,6 +171,8 @@ related to the project.
 * Checking Distinct Values for Categorical Features
 
   ```python
+  categorical_col = df[df.select_dtypes(include=['object']).columns.tolist()];
+     
   for i in categorical_col:
     print(df[i].value_counts(), end="\n\n")
   ```
