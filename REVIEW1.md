@@ -215,11 +215,11 @@ Testing, Regression Testing, Performance Testing, Security Testing) on all featu
 
 ## **References**
 
-* [Qing Wan, Lin Ye, "Career Recommendation for College Students Based on Deep Learning and Machine Learning", Scientific Programming, vol. 2022, Article ID 3437139, 10 pages, 2022. https://doi.org/10.1155/2022/3437139](https://www.hindawi.com/journals/sp/2022/3437139/)
+* [Qing Wan, Lin Ye, "Career Recommendation for College Students Based on Deep Learning and Machine Learning", Scientific Programming, vol. 2022, Article ID 3437139, 10 pages, 2022.](https://www.hindawi.com/journals/sp/2022/3437139/)
 
 * [Ong, Xiang & Lim, Kwan. (2023). SkillRec: A Data-Driven Approach to Job Skill Recommendation for Career Insights. 10.48550/arXiv.2302.09938. ](https://www.researchgate.net/publication/368664292_SkillRec_A_Data-Driven_Approach_to_Job_Skill_Recommendation_for_Career_Insights)
 
-* [G.Mahalakshmi, A.Arun Kumar , B.Senthilnayaki, J.Duraimurugan, "Job Recommendation
-System Based on Skill Sets"](https://ijcrt.org/papers/IJCRT2208099.pdf)
+* [G.Mahalakshmi,A.Arun Kumar,B.Senthilnayaki,J.Duraimurugan, "JOB RECOMMENDATION SYSTEM BASED ON SKILL SETS", International Journal of Creative Research Thoughts (IJCRT), ISSN:2320-2882, Volume.10, Issue 8, pp.a770-a785, August 2022](https://ijcrt.org/papers/IJCRT2208099.pdf)
 
-* [A. Ghosh, B. Woolf, S. Zilberstein and A. Lan, "Skill-based Career Path Modeling and Recommendation," 2020 IEEE International Conference on Big Data (Big Data), Atlanta, GA, USA, 2020, pp. 1156-1165, doi: 10.1109/BigData50022.2020.9377992.](https://ieeexplore.ieee.org/document/9377992)
+* [N. VidyaShreeram & Dr. A. Muthukumaravel. (2021). Student Career Prediction Using Decision Tree and Random Forest Machine Learning Classifiers, I3CAC, EAI
+DOI: 10.4108/eai.7-6-2021.2308621](https://ieeexplore.ieee.org/document/9377992)
