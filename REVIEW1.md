@@ -215,14 +215,11 @@ Testing, Regression Testing, Performance Testing, Security Testing) on all featu
 
 ## **References**
 
-* Qing Wan and Lin Ye, "Career Recommendation for College Students Based on Deep
-Learning and Machine Learning "
+* [Qing Wan, Lin Ye, "Career Recommendation for College Students Based on Deep Learning and Machine Learning", Scientific Programming, vol. 2022, Article ID 3437139, 10 pages, 2022. https://doi.org/10.1155/2022/3437139](https://www.hindawi.com/journals/sp/2022/3437139/)
 
-* Shivraj Hulbatte, Amit Wabale, Suraj Patil, Nikhilkumar Sathe, "Enhanced Job
-Recommendation System"
+* [Hulbatte, Shivraj. (2019). Enhanced Job Recommendation System. International Journal for Research in Applied Science and Engineering Technology. 7. 3556-3563. 10.22214/ijraset.2019.5583.](https://www.researchgate.net/publication/336108221_Enhanced_Job_Recommendation_System)
 
-* G.Mahalakshmi, A.Arun Kumar , B.Senthilnayaki, J.Duraimurugan, "Job Recommendation
-System Based on Skill Sets"
+* [G.Mahalakshmi, A.Arun Kumar , B.Senthilnayaki, J.Duraimurugan, "Job Recommendation
+System Based on Skill Sets"](https://ijcrt.org/papers/IJCRT2208099.pdf)
 
-* Aritra Ghosh, Beverly Woolf, Shlomo Zilberstein, Andrew Lan, "Skill-based Career Path
-Modeling and Recommendation"
+* [A. Ghosh, B. Woolf, S. Zilberstein and A. Lan, "Skill-based Career Path Modeling and Recommendation," 2020 IEEE International Conference on Big Data (Big Data), Atlanta, GA, USA, 2020, pp. 1156-1165, doi: 10.1109/BigData50022.2020.9377992.](https://ieeexplore.ieee.org/document/9377992)
