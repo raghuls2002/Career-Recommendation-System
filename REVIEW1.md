@@ -144,7 +144,7 @@ related to the project.
 
 * **Import libraries** <br>
   Importing python libraries required for data pre-processing:
-   ```{python}
+   ```python
    import pandas as pd
    import numpy as np
    import matplotlib.pyplot as plt
@@ -152,7 +152,7 @@ related to the project.
     ```
 * **Load the data** <br>
   Importing the required CSV file into Python using Pandas:
-  ```{python}
+  ```python
   df = pd.read_csv('./data/mldata.csv')
   print("\nList of Numerical features: \n" , df.select_dtypes(include=np.number).columns.tolist())
   print("\nList of Categorical features: \n" , df.select_dtypes(include=['object']).columns.tolist())
