@@ -143,15 +143,15 @@ related to the project.
 #### **4.2 Data Pre-Processing**
 
 * **Import libraries** <br>
-  Importing python libraries required for data pre-processing
+  Importing python libraries required for data pre-processing:
    ```{python}
    import pandas as pd
    import numpy as np
    import matplotlib.pyplot as plt
    import seaborn as sns
     ```
-* **Load the data**
-  Import the required CSV file into Python using Pandas:
+* **Load the data** <br>
+  Importing the required CSV file into Python using Pandas:
   ```{python}
   df = pd.read_csv('./data/mldata.csv')
   print("\nList of Numerical features: \n" , df.select_dtypes(include=np.number).columns.tolist())
