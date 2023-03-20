@@ -143,16 +143,15 @@ related to the project.
 #### **4.2 Data Pre-Processing**
 
 * Import libraries
-   ```python
+  Importing python libraries required for data pre-processing
+   ```{python}
    import pandas as pd
    import numpy as np
    import matplotlib.pyplot as plt
    import seaborn as sns
-   from sklearn.model_selection import train_test_split
-   from sklearn.metrics import confusion_matrix,accuracy_score
     ```
 * Load the data
-  ```python
+  ```{python}
   df = pd.read_csv('./data/mldata.csv')
   print("Columns in our dataset: " , df.columns)
   print("\nList of Numerical features: \n" , df.select_dtypes(include=np.number).columns.tolist())
@@ -174,9 +173,20 @@ related to the project.
 
   List of Categorical features: 
   ['self-learning capability?', 'Extra-courses did', 'certifications', 'workshops', 'reading and writing skills', 'memory capability score', 'Interested subjects', 'interested career area ', 'Type of company want to settle in?', 'Taken inputs from seniors or elders', 'Interested Type of Books', 'Management or Technical', 'hard/smart worker', 'worked in teams ever?', 'Introvert', 'Suggested Job Role']
-* Encoding categorical data
-* Splitting dataset into training and test set
-* Feature scaling
+  
+* Checking Missing Values
+  In order to check null values in Pandas DataFrame, we use isnull() function this function return dataframe of Boolean values which are True for NaN values.
+  ```{python}
+ df.isnull().sum(axis=0)
+  ```
+* Checking Distinct Values for Categorical Features
+  ```{python}
+  for i in categorical_col:
+    print(df[i].value_counts(), end="\n\n")
+  ```
+* Checking Data Balancing for Classification
+* Binary Encoding for Categorical Variables
+* NumDummy Variable Encodingber Encoding for Categorical
 
 #### **4.3 Train Model**
 
