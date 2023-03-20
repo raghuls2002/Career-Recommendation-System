@@ -143,14 +143,14 @@ related to the project.
 #### **4.2 Data Pre-Processing**
 
 * Import libraries and datasets
-   '''python
+   ```python
    import pandas as pd
    import numpy as np
    import matplotlib.pyplot as plt
    import seaborn as sns
    from sklearn.model_selection import train_test_split
    from sklearn.metrics import confusion_matrix,accuracy_score
-    '''
+    ```
 * Find any missing data
 * Encoding categorical data
 * Splitting dataset into training and test set
