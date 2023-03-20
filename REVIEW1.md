@@ -156,22 +156,21 @@ related to the project.
   print("\nList of Numerical features: \n" , df.select_dtypes(include=np.number).columns.tolist())
   print("\nList of Categorical features: \n" , df.select_dtypes(include=['object']).columns.tolist())
   ```
-  List of Numerical features: 
+  List of Numerical features: <br>
  ['Logical quotient rating', 'hackathons', 'coding skills rating', 'public speaking points']
 
-  List of Categorical features: 
+  List of Categorical features: <br>
   ['self-learning capability?', 'Extra-courses did', 'certifications', 'workshops', 'reading and writing skills', 'memory capability score', 'Interested subjects', 'interested career area ', 'Type of company want to settle in?', 'Taken inputs from seniors or elders', 'Interested Type of Books', 'Management or Technical', 'hard/smart worker', 'worked in teams ever?', 'Introvert', 'Suggested Job Role']
   
 * Checking Missing Values
   In order to check null values in Pandas DataFrame, we use isnull() function this function return dataframe of Boolean values which are True for NaN values.
- 
- ```{python}
- df.isnull().sum(axis=0)
+  ```python
+  df.isnull().sum(axis=0)
   ```
   
 * Checking Distinct Values for Categorical Features
 
-  ```{python}
+  ```python
   for i in categorical_col:
     print(df[i].value_counts(), end="\n\n")
   ```
