@@ -142,7 +142,7 @@ related to the project.
 
 #### **4.2 Data Pre-Processing**
 
-* Import libraries and datasets
+* Import libraries
    ```python
    import pandas as pd
    import numpy as np
@@ -151,7 +151,29 @@ related to the project.
    from sklearn.model_selection import train_test_split
    from sklearn.metrics import confusion_matrix,accuracy_score
     ```
-* Find any missing data
+* Load the data
+  ```python
+  df = pd.read_csv('./data/mldata.csv')
+  print("Columns in our dataset: " , df.columns)
+  print("\nList of Numerical features: \n" , df.select_dtypes(include=np.number).columns.tolist())
+  print("\nList of Categorical features: \n" , df.select_dtypes(include=['object']).columns.tolist())
+  ```
+  Columns in our dataset:  Index(['Logical quotient rating', 'hackathons', 'coding skills rating',
+       'public speaking points', 'self-learning capability?',
+       'Extra-courses did', 'certifications', 'workshops',
+       'reading and writing skills', 'memory capability score',
+       'Interested subjects', 'interested career area ',
+       'Type of company want to settle in?',
+       'Taken inputs from seniors or elders', 'Interested Type of Books',
+       'Management or Technical', 'hard/smart worker', 'worked in teams ever?',
+       'Introvert', 'Suggested Job Role'],
+      dtype='object')
+      
+  List of Numerical features: 
+ ['Logical quotient rating', 'hackathons', 'coding skills rating', 'public speaking points']
+
+  List of Categorical features: 
+  ['self-learning capability?', 'Extra-courses did', 'certifications', 'workshops', 'reading and writing skills', 'memory capability score', 'Interested subjects', 'interested career area ', 'Type of company want to settle in?', 'Taken inputs from seniors or elders', 'Interested Type of Books', 'Management or Technical', 'hard/smart worker', 'worked in teams ever?', 'Introvert', 'Suggested Job Role']
 * Encoding categorical data
 * Splitting dataset into training and test set
 * Feature scaling
