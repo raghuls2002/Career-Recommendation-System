@@ -217,7 +217,7 @@ Testing, Regression Testing, Performance Testing, Security Testing) on all featu
 
 * [Qing Wan, Lin Ye, "Career Recommendation for College Students Based on Deep Learning and Machine Learning", Scientific Programming, vol. 2022, Article ID 3437139, 10 pages, 2022. https://doi.org/10.1155/2022/3437139](https://www.hindawi.com/journals/sp/2022/3437139/)
 
-* [Hulbatte, Shivraj. (2019). Enhanced Job Recommendation System. International Journal for Research in Applied Science and Engineering Technology. 7. 3556-3563. 10.22214/ijraset.2019.5583.](https://www.researchgate.net/publication/336108221_Enhanced_Job_Recommendation_System)
+* [Ong, Xiang & Lim, Kwan. (2023). SkillRec: A Data-Driven Approach to Job Skill Recommendation for Career Insights. 10.48550/arXiv.2302.09938. ](https://www.researchgate.net/publication/368664292_SkillRec_A_Data-Driven_Approach_to_Job_Skill_Recommendation_for_Career_Insights)
 
 * [G.Mahalakshmi, A.Arun Kumar , B.Senthilnayaki, J.Duraimurugan, "Job Recommendation
 System Based on Skill Sets"](https://ijcrt.org/papers/IJCRT2208099.pdf)
