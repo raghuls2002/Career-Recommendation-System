@@ -222,4 +222,4 @@ Testing, Regression Testing, Performance Testing, Security Testing) on all featu
 * [G.Mahalakshmi,A.Arun Kumar,B.Senthilnayaki,J.Duraimurugan, "JOB RECOMMENDATION SYSTEM BASED ON SKILL SETS", International Journal of Creative Research Thoughts (IJCRT), ISSN:2320-2882, Volume.10, Issue 8, pp.a770-a785, August 2022](https://ijcrt.org/papers/IJCRT2208099.pdf)
 
 * [N. VidyaShreeram & Dr. A. Muthukumaravel. (2021). Student Career Prediction Using Decision Tree and Random Forest Machine Learning Classifiers, I3CAC, EAI
-DOI: 10.4108/eai.7-6-2021.2308621](https://ieeexplore.ieee.org/document/9377992)
+DOI: 10.4108/eai.7-6-2021.2308621](https://eudl.eu/pdf/10.4108/eai.7-6-2021.2308621)
