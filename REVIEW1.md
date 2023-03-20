@@ -142,7 +142,7 @@ related to the project.
 
 #### **4.2 Data Pre-Processing**
 
-* Import libraries
+* Import libraries <br>
   Importing python libraries required for data pre-processing
    ```{python}
    import pandas as pd
@@ -153,21 +153,9 @@ related to the project.
 * Load the data
   ```{python}
   df = pd.read_csv('./data/mldata.csv')
-  print("Columns in our dataset: " , df.columns)
   print("\nList of Numerical features: \n" , df.select_dtypes(include=np.number).columns.tolist())
   print("\nList of Categorical features: \n" , df.select_dtypes(include=['object']).columns.tolist())
   ```
-  Columns in our dataset:  Index(['Logical quotient rating', 'hackathons', 'coding skills rating',
-       'public speaking points', 'self-learning capability?',
-       'Extra-courses did', 'certifications', 'workshops',
-       'reading and writing skills', 'memory capability score',
-       'Interested subjects', 'interested career area ',
-       'Type of company want to settle in?',
-       'Taken inputs from seniors or elders', 'Interested Type of Books',
-       'Management or Technical', 'hard/smart worker', 'worked in teams ever?',
-       'Introvert', 'Suggested Job Role'],
-      dtype='object')
-      
   List of Numerical features: 
  ['Logical quotient rating', 'hackathons', 'coding skills rating', 'public speaking points']
 
@@ -176,14 +164,18 @@ related to the project.
   
 * Checking Missing Values
   In order to check null values in Pandas DataFrame, we use isnull() function this function return dataframe of Boolean values which are True for NaN values.
-  ```{python}
+ 
+ ```{python}
  df.isnull().sum(axis=0)
   ```
+  
 * Checking Distinct Values for Categorical Features
+
   ```{python}
   for i in categorical_col:
     print(df[i].value_counts(), end="\n\n")
   ```
+  
 * Checking Data Balancing for Classification
 * Binary Encoding for Categorical Variables
 * NumDummy Variable Encodingber Encoding for Categorical
