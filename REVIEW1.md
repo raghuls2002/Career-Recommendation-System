@@ -153,7 +153,21 @@ related to the project.
 * **Load the data** <br>
   Importing the required CSV file into Python using Pandas:
   ```python
-  df = pd.read_csv('./data/mldata.csv')
+    df = pd.read_csv('./data/mldata.csv')
+    print("Columns in our dataset:\n" , df.columns)
+  ```
+  Columns in our dataset: <br> Index(['Logical quotient rating', 'hackathons', 'coding skills rating',
+       'public speaking points', 'self-learning capability?',
+       'Extra-courses did', 'certifications', 'workshops',
+       'reading and writing skills', 'memory capability score',
+       'Interested subjects', 'interested career area ',
+       'Type of company want to settle in?',
+       'Taken inputs from seniors or elders', 'Interested Type of Books',
+       'Management or Technical', 'hard/smart worker', 'worked in teams ever?',
+       'Introvert', 'Suggested Job Role'],
+      dtype='object')
+* **Finding numerical and categorical features** <br>
+  ```python
   print("\nList of Numerical features: \n" , df.select_dtypes(include=np.number).columns.tolist())
   print("\nList of Categorical features: \n" , df.select_dtypes(include=['object']).columns.tolist())
   ```
