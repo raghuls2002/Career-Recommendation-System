@@ -156,7 +156,7 @@ related to the project.
     df = pd.read_csv('./data/mldata.csv')
     print("Columns in our dataset:\n" , df.columns)
   ```
-  Columns in our dataset: <br> Index(['Logical quotient rating', 'hackathons', 'coding skills rating',
+  **Columns in our dataset:** <br> Index(['Logical quotient rating', 'hackathons', 'coding skills rating',
        'public speaking points', 'self-learning capability?',
        'Extra-courses did', 'certifications', 'workshops',
        'reading and writing skills', 'memory capability score',
