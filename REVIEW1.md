@@ -194,7 +194,8 @@ related to the project.
   
 * Checking Data Balancing for Classification
 * Binary Encoding for Categorical Variables
-* NumDummy Variable Encodingber Encoding for Categorical
+* Number Encoding for Categorical
+* Dummy Variable Encoding
 
 #### **4.3 Train Model**
 
