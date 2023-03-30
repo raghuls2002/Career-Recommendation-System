@@ -232,7 +232,7 @@ Testing, Regression Testing, Performance Testing, Security Testing) on all featu
 
 * [Chaudhary, Dileep & Prajapati, Harsh & Rathod, Rajan & Patel, Parth & Gurjwar, Rajiv. (2019). Student Future Prediction Using Machine Learning. International Journal of Scientific Research in Computer Science, Engineering and Information Technology. 1104-1108. 10.32628/CSEIT1952300. ](https://www.researchgate.net/publication/332408552_Student_Future_Prediction_Using_Machine_Learning)
 
-* [Ong, Xiang & Lim, Kwan. (2023). SkillRec: A Data-Driven Approach to Job Skill Recommendation for Career Insights. 10.48550/arXiv.2302.09938. ](https://www.researchgate.net/publication/368664292_SkillRec_A_Data-Driven_Approach_to_Job_Skill_Recommendation_for_Career_Insights)
+* [V Madhan Mohan Reddy, " Career Prediction System", International Journal of Scientific Research in Science and Technology(IJSRST), Print ISSN : 2395-6011, Online ISSN : 2395-602X, Volume 8, Issue 4, pp.54-58, July-August-2021.](https://ijsrst.com/IJSRST218411)
 
 * [Ali, Jehad & Khan, Rehanullah & Ahmad, Nasir & Maqsood, Imran. (2012). Random Forests and Decision Trees. International Journal of Computer Science Issues(IJCSI). 9. ](https://www.researchgate.net/publication/259235118_Random_Forests_and_Decision_Trees)
 
