@@ -71,37 +71,17 @@ Importing python libraries required for data pre-processing and loading the requ
   
 ##### **Checking missing values**<br>
   In order to check null values in Pandas DataFrame, we use isnull() function this function return dataframe of Boolean values which are True for NaN values.
-  ```python
-  df.info()
+   ```python
+  df.isnull().sum(axis=0)
   ```
-  <class 'pandas.core.frame.DataFrame'>
-   RangeIndex: 6901 entries, 0 to 6900
-  Data columns (total 20 columns):
-       Column                               Non-Null Count  Dtype  <br>
-  ---  ------                               --------------  -----  <br>
-   0   Logical quotient rating              6901 non-null   int64 <br>
-   1   hackathons                           6901 non-null   int64 <br>
-   2   coding skills rating                 6901 non-null   int64 <br>
-   3   public speaking points               6901 non-null   int64 <br>
-   4   self-learning capability?            6901 non-null   object <br>
-   5   Extra-courses did                    6901 non-null   object <br>
-   6   certifications                       6901 non-null   object <br>
-   7   workshops                            6901 non-null   object <br>
-   8   reading and writing skills           6901 non-null   object <br>
-   9   memory capability score              6901 non-null   object  <br>
-   10  Interested subjects                  6901 non-null   object  <br>
-   11  interested career area               6901 non-null   object  <br>
-   12  Type of company want to settle in?   6901 non-null   object  <br>
-   13  Taken inputs from seniors or elders  6901 non-null   object <br>
-   14  Interested Type of Books             6901 non-null   object <br>
-   15  Management or Technical              6901 non-null   object <br>
-   16  hard/smart worker                    6901 non-null   object <br>
-   17  worked in teams ever?                6901 non-null   object <br>
-   18  Introvert                            6901 non-null   object <br>
-   19  Suggested Job Role                   6901 non-null   object <br>
-  dtypes: int64(4), object(16)
 
 ##### **Dummy value encoding**
+  ```python
+  for i in data[categorical_cols]:
+    data[i] = data[i].astype('category')
+    data[i + "_code"] = data[i].cat.codes
+    data= data.drop(i, axis=1)
+  ```
 
 #### **Algorithms used**
 
