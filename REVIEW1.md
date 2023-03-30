@@ -230,7 +230,7 @@ Testing, Regression Testing, Performance Testing, Security Testing) on all featu
 
 ## **References**
 
-* [Qing Wan, Lin Ye, "Career Recommendation for College Students Based on Deep Learning and Machine Learning", Scientific Programming, vol. 2022, Article ID 3437139, 10 pages, 2022.](https://www.hindawi.com/journals/sp/2022/3437139/)
+* [Chaudhary, Dileep & Prajapati, Harsh & Rathod, Rajan & Patel, Parth & Gurjwar, Rajiv. (2019). Student Future Prediction Using Machine Learning. International Journal of Scientific Research in Computer Science, Engineering and Information Technology. 1104-1108. 10.32628/CSEIT1952300. ](https://www.researchgate.net/publication/332408552_Student_Future_Prediction_Using_Machine_Learning)
 
 * [Ong, Xiang & Lim, Kwan. (2023). SkillRec: A Data-Driven Approach to Job Skill Recommendation for Career Insights. 10.48550/arXiv.2302.09938. ](https://www.researchgate.net/publication/368664292_SkillRec_A_Data-Driven_Approach_to_Job_Skill_Recommendation_for_Career_Insights)
 
