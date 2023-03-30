@@ -75,7 +75,10 @@ Importing python libraries required for data pre-processing and loading the requ
   df.isnull().sum(axis=0)
   ```
 
-##### **Dummy value encoding**
+##### **Dummy value encoding** <br>
+Dummy variable encoding, also known as one-hot encoding, is a technique used in data analysis and machine learning to convert categorical data into numerical data that can be used in statistical and machine learning models.
+
+Using this technique, we avoid having the model interpret the categorical variable as a continuous variable with an inherent order (which may not exist) and instead allow it to treat each category independently. 
   ```python
   for i in data[categorical_cols]:
     data[i] = data[i].astype('category')
