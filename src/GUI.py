@@ -87,6 +87,10 @@ for i in qList:
  #   combobox = ttk.Combobox(root, values=dropdownList[i], textvariable=selected_option)
   #  combobox.pack(padx=10, pady=10)
     j+=1
+    
+temp = Dict["Suggested Job Role_code"];
+temp = {v: k for k, v in temp.items()}
+Dict.pop("Suggested Job Role_code");
 
 def submit_form():
     args={}
@@ -98,10 +102,7 @@ def submit_form():
 
         print(args[i])
         
-    temp = Dict["Suggested Job Role_code"];
-    temp = {v: k for k, v in temp.items()}
 
-    Dict.pop("Suggested Job Role_code");
     
     for i in list(Dict.keys()):
         args[i] = Dict[i][args[i]]
