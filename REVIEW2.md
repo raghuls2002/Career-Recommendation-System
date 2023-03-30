@@ -14,11 +14,94 @@
 
 Previously, the questionnaire method was used to forecast a student's career. However, it is a time-consuming process, and it is difficult to determine the status of students' opinions. Various computing techniques are used to forecast the student's future career. In this literature review, we aim to synthesize existing research on skill-based career recommendation systems. We will also compare the accuracy of various ML algorithms such as SVM (Scalar Vector Machine), RF (Random Forest), XGB (XGBClassifier ), DT(Decision Tree) and Linear Regression.
 
-### **Methodology**
+### **Existing System**
+
+There are multiple models available in the market to address the same problem, each with its own advantages and disadvantages. Some existing systems use these methods as input.
+
+* **Forecasting using Academic Grades**
+Using student academic grades [1,2] as input for forecasting may not be efficient as individual grades depend on factors such as college, exam models, paper evaluation, and so on.
+
+* **Forecasting using YES/NO Questionnaire**
+Asking a questionnaire with various required fields and receiving a yes/no answer may confuse students. For instance, in a particular course, a student may only have basic knowledge, and hence, not know whether to answer yes or no. In such cases, the student might not provide input, leading to incorrect predictions.
+
+* **Lack of Clear Career Roadmap for Forecasting**
+Predicting a career without providing a clear roadmap on how to proceed may leave students in a dilemma. Predictions with a clear roadmap can help students understand their career path.
+
+### **Proposed System**
+
+#### **Data Collection**
+
+Questioning students and receiving responses in the form of yes or no may not provide accurate data for predicting a student's career path. To accurately predict a student's career, many parameters such as knowledge in different subjects, specializations, programming skills, hackathons, workshops, certifications, and preferred courses are required. To train a model for this purpose, a dataset with over 6,500 records that includes all necessary fields has been collected. The input data is obtained in the form of ratings for various fields of computer science students. Asking students to rate themselves in required fields is the best way to get precise knowledge about their abilities.
 
 #### **Data Pre-Processing**
 
-#####
+##### **Importing libraries and loading data** <br>
+
+Importing python libraries required for data pre-processing and loading the required CSV file using pandas library
+
+  ```python
+    import pandas as pd
+    import numpy as np
+    import matplotlib.pyplot as plt
+    import seaborn as sns
+    df = data.read_csv('./data/mldata.csv')
+    print("Columns in our dataset:\n" , df.columns)
+  ```
+   **Columns in our dataset:** <br> Index(['Logical quotient rating', 'hackathons', 'coding skills rating',
+       'public speaking points', 'self-learning capability?',
+       'Extra-courses did', 'certifications', 'workshops',
+       'reading and writing skills', 'memory capability score',
+       'Interested subjects', 'interested career area ',
+       'Type of company want to settle in?',
+       'Taken inputs from seniors or elders', 'Interested Type of Books',
+       'Management or Technical', 'hard/smart worker', 'worked in teams ever?',
+       'Introvert', 'Suggested Job Role'],
+      dtype='object')
+      
+##### **Finding numerical and categorical features**
+  ```python
+  print("\nList of Numerical features: \n" , data.select_dtypes(include=np.number).columns.tolist())
+  print("\nList of Categorical features: \n" , data.select_dtypes(include=['object']).columns.tolist())
+  ```
+  List of Numerical features: <br>
+ ['Logical quotient rating', 'hackathons', 'coding skills rating', 'public speaking points']
+
+  List of Categorical features: <br>
+  ['self-learning capability?', 'Extra-courses did', 'certifications', 'workshops', 'reading and writing skills', 'memory capability score', 'Interested subjects', 'interested career area ', 'Type of company want to settle in?', 'Taken inputs from seniors or elders', 'Interested Type of Books', 'Management or Technical', 'hard/smart worker', 'worked in teams ever?', 'Introvert', 'Suggested Job Role']
+  
+##### **Checking missing values**<br>
+  In order to check null values in Pandas DataFrame, we use isnull() function this function return dataframe of Boolean values which are True for NaN values.
+  ```python
+  df.info()
+  ```
+  <class 'pandas.core.frame.DataFrame'>
+   RangeIndex: 6901 entries, 0 to 6900
+  Data columns (total 20 columns):
+       Column                               Non-Null Count  Dtype  <br>
+  ---  ------                               --------------  -----  <br>
+   0   Logical quotient rating              6901 non-null   int64 <br>
+   1   hackathons                           6901 non-null   int64 <br>
+   2   coding skills rating                 6901 non-null   int64 <br>
+   3   public speaking points               6901 non-null   int64 <br>
+   4   self-learning capability?            6901 non-null   object <br>
+   5   Extra-courses did                    6901 non-null   object <br>
+   6   certifications                       6901 non-null   object <br>
+   7   workshops                            6901 non-null   object <br>
+   8   reading and writing skills           6901 non-null   object <br>
+   9   memory capability score              6901 non-null   object  <br>
+   10  Interested subjects                  6901 non-null   object  <br>
+   11  interested career area               6901 non-null   object  <br>
+   12  Type of company want to settle in?   6901 non-null   object  <br>
+   13  Taken inputs from seniors or elders  6901 non-null   object <br>
+   14  Interested Type of Books             6901 non-null   object <br>
+   15  Management or Technical              6901 non-null   object <br>
+   16  hard/smart worker                    6901 non-null   object <br>
+   17  worked in teams ever?                6901 non-null   object <br>
+   18  Introvert                            6901 non-null   object <br>
+   19  Suggested Job Role                   6901 non-null   object <br>
+  dtypes: int64(4), object(16)
+
+##### **Dummy value encoding**
 
 #### **Algorithms used**
 
@@ -58,7 +141,9 @@ To make a prediction at a new point x:
 $$Regression: f_{rf}^{B}(x) = \frac{1}{B}{\sum_{b = 1}^{B}}{T_{b}(x)}$$
 Let $C_{b}(x)$ be the class prediction of the bth random-forest tree. Then, $Classification: $$C_{rf}^{B}(x) = majority vote (C_{b})_{1}^{B}$$
 
-### **Proposed System**
+
+
+
 ### **Result**
 
 
