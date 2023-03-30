@@ -35,7 +35,7 @@ Questioning students and receiving responses in the form of yes or no may not pr
 
 #### **Data Pre-Processing**
 
-##### **Importing libraries and loading data** <br>
+#### **Importing libraries and loading data** <br>
 
 Importing python libraries required for data pre-processing and loading the required CSV file using pandas library
 
@@ -58,7 +58,7 @@ Importing python libraries required for data pre-processing and loading the requ
        'Introvert', 'Suggested Job Role'],
       dtype='object')
       
-##### **Finding numerical and categorical features**
+#### **Finding numerical and categorical features**
   ```python
   print("\nList of Numerical features: \n" , data.select_dtypes(include=np.number).columns.tolist())
   print("\nList of Categorical features: \n" , data.select_dtypes(include=['object']).columns.tolist())
@@ -69,13 +69,13 @@ Importing python libraries required for data pre-processing and loading the requ
   List of Categorical features: <br>
   ['self-learning capability?', 'Extra-courses did', 'certifications', 'workshops', 'reading and writing skills', 'memory capability score', 'Interested subjects', 'interested career area ', 'Type of company want to settle in?', 'Taken inputs from seniors or elders', 'Interested Type of Books', 'Management or Technical', 'hard/smart worker', 'worked in teams ever?', 'Introvert', 'Suggested Job Role']
   
-##### **Checking missing values**<br>
+#### **Checking missing values**<br>
   In order to check null values in Pandas DataFrame, we use isnull() function this function return dataframe of Boolean values which are True for NaN values.
    ```python
   df.isnull().sum(axis=0)
   ```
 
-##### **Dummy value encoding** <br>
+#### **Dummy value encoding** <br>
 Dummy variable encoding, also known as one-hot encoding, is a technique used in data analysis and machine learning to convert categorical data into numerical data that can be used in statistical and machine learning models.
 
 Using this technique, we avoid having the model interpret the categorical variable as a continuous variable with an inherent order (which may not exist) and instead allow it to treat each category independently. 
@@ -85,10 +85,27 @@ Using this technique, we avoid having the model interpret the categorical variab
     data[i + "_code"] = data[i].cat.codes
     data= data.drop(i, axis=1)
   ```
+#### **Splitting the dataset** <br>
+Splitting the dataset is the process of dividing a given dataset into two or more subsets for training and testing purposes in machine learning or data analysis. Here, the dataset is divided into two parts: the training set and the test set. The training set is used to build the machine learning model, while the test set is used to evaluate the performance of the model on new, unseen data.
+  ```python
+  from sklearn.model_selection import train_test_split
+
+  X=data.drop([target], axis=1)
+  y=data[target]
+  X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)
+  ```
+#### **Feature Scaling** <br>
+Feature scaling is the process of transforming numerical data in a dataset to a common scale, without distorting differences in the ranges of values. This can help improve the performance and accuracy of machine learning algorithms that are sensitive to the scale of the input features. It involves converting the values of the features in a dataset so that they all fall within a similar range, typically between 0 and 1 or -1 and 1, making them easier to compare and analyze. This can be achieved using various techniques such as normalization, standardization, or rescaling.
+  ```python
+  from sklearn.preprocessing import StandardScaler
+  
+  X_train_s = scaler.fit_transform(X_train)
+  X_test_s = scaler.transform(X_test)
+  ```
 
 #### **Algorithms used**
 
-##### **Decision Tree**
+#### **Decision Tree**
 
 The decision tree is a basic machine learning technique that can be used for regression tasks. It is structured like a flow-chart, with each non-leaf node representing a test on an attribute and each branch representing the test's outcome. The leaf nodes contain class labels, and the topmost node is called the root node. This model is particularly effective for handling tabular data that has numerical or categorical features with a small number of categories (less than a few hundred). Different machine learning models have varying advantages depending on the situation.
 
@@ -106,7 +123,7 @@ The IG value can be calculated by using the following equation.
 
 **$$Gain(T, X) = Entropy(T) - Entropy(T, X)$$**
 
-##### **Random Forest Classifier**
+#### **Random Forest Classifier**
 
 The Random Forest is a highly effective machine learning model for predictive analytics, widely used in the industry. It is an additive model that generates predictions by combining decisions from a series of base models. Specifically, this class of models can be represented as the sum of simple base models, where each base classifier is a simple decision tree. This technique, which involves using multiple models to improve predictive performance, is known as model ensembling. In the case of random forests, each base model is constructed independently using a different subsample of the data.
 
@@ -123,8 +140,6 @@ The RF approach can be explained as the following steps:
 To make a prediction at a new point x:
 $$Regression: f_{rf}^{B}(x) = \frac{1}{B}{\sum_{b = 1}^{B}}{T_{b}(x)}$$
 Let $C_{b}(x)$ be the class prediction of the bth random-forest tree. Then, $Classification: $$C_{rf}^{B}(x) = majority vote (C_{b})_{1}^{B}$$
-
-
 
 
 ### **Result**
