@@ -22,7 +22,7 @@ the candidate. The solution is to design a system
 that reads a resume and their skills.
 
 
-![](.assets/career.jpg)
+![](./assets/career.jpg)
 
 <br>
 
