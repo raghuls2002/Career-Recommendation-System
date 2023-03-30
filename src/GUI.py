@@ -26,7 +26,7 @@ qList = ['Logical quotient rating',
 
 Dict = {'self-learning capability?_code': {'yes': 1, 'no': 0}, 'Extra-courses did_code': {'no': 0, 'yes': 1}, 'certifications_code': {'information security': 4, 'shell programming': 8, 'r programming': 7, 'distro making': 1, 'machine learning': 5, 'full stack': 2, 'hadoop': 3, 'app development': 0, 'python': 6}, 'workshops_code': {'testing': 6, 'database security': 2, 'game development': 3, 'data science': 1, 'system designing': 5, 'hacking': 4, 'cloud computing': 0, 'web technologies': 7}, 'reading and writing skills_code': {'poor': 2, 'excellent': 0, 'medium': 1}, 'memory capability score_code': {'poor': 2, 'medium': 1, 'excellent': 0}, 'Interested subjects_code': {'programming': 9, 'Management': 2, 'data engineering': 5, 'networks': 7, 'Software Engineering': 3, 'cloud computing': 4, 'parallel computing': 8, 'IOT': 1, 'Computer Architecture': 0, 'hacking': 6}, 'interested career area _code': {'testing': 5, 'system developer': 4, 'Business process analyst': 0, 'security': 3, 'developer': 2, 'cloud computing': 1}, 'Type of company want to settle in?_code': {'BPA': 0, 'Cloud Services': 1, 'product development': 9, 'Testing and Maintainance Services': 7, 'SAaS services': 4, 'Web Services': 8, 'Finance': 2, 'Sales and Marketing': 5, 'Product based': 3, 'Service Based': 6}, 'Taken inputs from seniors or elders_code': {'no': 0, 'yes': 1}, 'Interested Type of Books_code': {'Series': 28, 'Autobiographies': 3, 'Travel': 29, 'Guide': 13, 'Health': 14, 'Journals': 17, 'Anthology': 1, 'Dictionaries': 9, 'Prayer books': 21, 'Art': 2, 'Encyclopedias': 11, 'Religion-Spirituality': 22, 'Action and Adventure': 0, 'Comics': 6, 'Horror': 16, 'Satire': 24, 'Self help': 27, 'History': 15, 'Cookbooks': 7, 'Math': 18, 'Biographies': 4, 'Drama': 10, 'Diaries': 8, 'Science fiction': 26, 'Poetry': 20, 'Romance': 23, 'Science': 25, 'Trilogy': 30, 'Fantasy': 12, 'Childrens': 5, 'Mystery': 19}, 'Management or Technical_code': {'Management': 0, 'Technical': 1}, 'hard/smart worker_code': {'smart worker': 1, 'hard worker': 0}, 'worked in teams ever?_code': {'yes': 1, 'no': 0}, 'Introvert_code': {'no': 0, 'yes': 1}, 'Suggested Job Role_code': {'Applications Developer': 0, 'CRM Technical Developer': 1, 'Database Developer': 2, 'Mobile Applications Developer': 3, 'Network Security Engineer': 4, 'Software Developer': 5, 'Software Engineer': 6, 'Software Quality Assurance (QA) / Testing': 7, 'Systems Security Administrator': 8, 'Technical Support': 9, 'UX Designer': 10, 'Web Developer': 11}}
 
-dropdownList = {'Logical quotient rating': [5, 7, 2, 9, 1, 6, 4, 8, 3], 
+dropdownList = {'Logical quotient rating':[5, 7, 2, 9, 1, 6, 4, 8, 3], 
                 'hackathons': [0, 6, 3, 1, 5, 4, 2], 
                 'coding skills rating': [6, 4, 9, 3, 5, 1, 8, 2, 7], 
                 'public speaking points': [2, 3, 1, 5, 4, 7, 9, 6, 8], 
@@ -91,26 +91,40 @@ for i in qList:
 def submit_form():
     args={}
     for i in qList:
-        args[i]=entry[i].get();
+        if(i not in list(Dict.keys())):
+             args[i]=int(entry[i].get().strip())
+        else:
+            args[i]=entry[i].get().strip()
+
+        print(args[i])
+        
+    temp = Dict["Suggested Job Role_code"];
+    temp = {v: k for k, v in temp.items()}
+
+    Dict.pop("Suggested Job Role_code");
+    
+    for i in list(Dict.keys()):
         args[i] = Dict[i][args[i]]
         print(args[i])
         
-    with open("model_pickle","rb") as f:
+    tk.messagebox.showinfo("Success", "Registration form submitted successfully!")
+    
+    with open("./model.pkl","rb") as f:
         mp = pickle.load(f)
+    
+    mp.feature_names = None
+    value =  mp.predict([list(args.values())])
+    print(value)
+    
+    predicted_career=temp[round(value[0])];
+    print("Recommended career is "+predicted_career)
+    outputLabel = ttk.Label(scrollable_frame, font=("Arial", 15), text='Recommended career is '+predicted_career)
+    outputLabel.grid(row=j+2, column=50, padx=10, pady=30, sticky="w")
         
-    mp.predict(args)
     
-    args[0] = int(args[0])
-    newDict = {v: k for k, v in dropdownList['Suggested Job Role'].items()}
-    label = tk.Label(root, text="This prediction is "+newDict[args[0]])
-    label.pack(side="bottom", padx=10, pady=10)
-    
-        
-    
-
-submit_button = ttk.Button(scrollable_frame, text="Submit")
+submit_button = ttk.Button(scrollable_frame, text="Submit", command=submit_form)
 submit_button.grid(row=j+1, column=1, padx=10, pady=10, sticky="e")
-submit_button = tk.Button(root, text="Submit", command=submit_form)
+
 
 # Pack the scrollbar and canvas into the main window
 scrollbar.pack(side="right", fill="y")
