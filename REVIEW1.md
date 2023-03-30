@@ -234,7 +234,7 @@ Testing, Regression Testing, Performance Testing, Security Testing) on all featu
 
 * [Ong, Xiang & Lim, Kwan. (2023). SkillRec: A Data-Driven Approach to Job Skill Recommendation for Career Insights. 10.48550/arXiv.2302.09938. ](https://www.researchgate.net/publication/368664292_SkillRec_A_Data-Driven_Approach_to_Job_Skill_Recommendation_for_Career_Insights)
 
-* [G.Mahalakshmi,A.Arun Kumar,B.Senthilnayaki,J.Duraimurugan, "JOB RECOMMENDATION SYSTEM BASED ON SKILL SETS", International Journal of Creative Research Thoughts (IJCRT), ISSN:2320-2882, Volume.10, Issue 8, pp.a770-a785, August 2022](https://ijcrt.org/papers/IJCRT2208099.pdf)
+* [Ali, Jehad & Khan, Rehanullah & Ahmad, Nasir & Maqsood, Imran. (2012). Random Forests and Decision Trees. International Journal of Computer Science Issues(IJCSI). 9. ](https://www.researchgate.net/publication/259235118_Random_Forests_and_Decision_Trees)
 
 * [N. VidyaShreeram & Dr. A. Muthukumaravel. (2021). Student Career Prediction Using Decision Tree and Random Forest Machine Learning Classifiers, I3CAC, EAI
 DOI: 10.4108/eai.7-6-2021.2308621](https://eudl.eu/pdf/10.4108/eai.7-6-2021.2308621)
