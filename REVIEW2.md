@@ -145,4 +145,13 @@ To make a prediction at a new point x:
 $$Regression: f_{rf}^{B}(x) = \frac{1}{B}{\sum_{b = 1}^{B}}{T_{b}(x)}$$
 Let $C_{b}(x)$ be the class prediction of the bth random-forest tree. Then, $Classification: $$C_{rf}^{B}(x) = majority vote (C_{b})_{1}^{B}$$
 
+## Literature Survey
+
+| Study | Year | Methodology | Results |
+|-------|------|-------------|---------|
+| Student Future Prediction Using Machine Learning| 2019 | Linear Regression, Decision Tree Regression, Random Tree classifier |The system  will  help  student  used  to  predict  the suitable  course. The system can facilitate the students, as it will guide them to take appropriate decision while choosing the stream  as  his/her  career.|
+| Career Prediction System | 2021 | XGBoost | Career Prediction System developed using machine learning is very effective in predicting correct career based on the student skills possessed in required fields. |
+| Random Forests and Decision Trees | 2012 | Random Forests, Decision Trees | From the results, it can be concluded that the Random Forest achieves increased classification performance and yields results that are accurate and precise in the cases of large number of instances. These scenarios also cover the missing values problem in the datasets and thus besides accuracy, it also overcomes the over-fitting problem generated due to missing values in the datasets |
+| Student Career Prediction Using Decision Tree and Random Forest Machine Learning Classifiers| 2020| Random Forest, Decision Tree | This research work forecast the undergraduate students’ career by using RF and DT machine learning classifier. The classifiers are implemented by using Python programming languages. Final output shows that Random Forest classifier produces better result than the Decision Tree classifier. |
+
 ## **Demonstration**
