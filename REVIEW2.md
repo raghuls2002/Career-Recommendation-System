@@ -29,6 +29,10 @@ Predicting a career without providing a clear roadmap on how to proceed may leav
 
 ### **Proposed System**
 
+#### **Flow chart**
+
+![](./assets/proposed_system.PNG)
+
 #### **Data Collection**
 
 Questioning students and receiving responses in the form of yes or no may not provide accurate data for predicting a student's career path. To accurately predict a student's career, many parameters such as knowledge in different subjects, specializations, programming skills, hackathons, workshops, certifications, and preferred courses are required. To train a model for this purpose, a dataset with over 6,500 records that includes all necessary fields has been collected. The input data is obtained in the form of ratings for various fields of computer science students. Asking students to rate themselves in required fields is the best way to get precise knowledge about their abilities.
@@ -140,10 +144,5 @@ The RF approach can be explained as the following steps:
 To make a prediction at a new point x:
 $$Regression: f_{rf}^{B}(x) = \frac{1}{B}{\sum_{b = 1}^{B}}{T_{b}(x)}$$
 Let $C_{b}(x)$ be the class prediction of the bth random-forest tree. Then, $Classification: $$C_{rf}^{B}(x) = majority vote (C_{b})_{1}^{B}$$
-
-
-### **Result**
-
-
 
 ## **Demonstration**
