@@ -192,8 +192,7 @@ related to the project.
     print(df[i].value_counts(), end="\n\n")
   ```
 * Checking Data Balancing for Classification
-* 
-* **Dummy Variable Encoding**
+* **Dummy Variable Encoding** <br>
   Using dummy variable encoding to provide numerical codes for categorical values.
   ```python
   for i in data[categorical_cols]:
