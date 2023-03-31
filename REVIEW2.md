@@ -155,14 +155,14 @@ Let $C_{b}(x)$ be the class prediction of the bth random-forest tree. Then, $Cla
 | Student Career Prediction Using Decision Tree and Random Forest Machine Learning Classifiers| 2020| Random Forest, Decision Tree | This research work forecast the undergraduate students’ career by using RF and DT machine learning classifier. The classifiers are implemented by using Python programming languages. Final output shows that Random Forest classifier produces better result than the Decision Tree classifier. |
 
 ## **Demonstration**
-Input 1:
+#### Input 1:
 ![](./assets/Demo/input1.PNG)
 
-Ouput 1:
+#### Ouput 1:
 ![](./assets/Demo/output1.PNG)
 
-Input 2:
+#### Input 2:
 ![](./assets/Demo/input2.PNG)
 
-Ouput 2:
-![](./assets/Demo/input2.PNG)
+#### Ouput 2:
+![](./assets/Demo/ouput2.PNG)
