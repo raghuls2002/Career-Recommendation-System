@@ -195,10 +195,10 @@ related to the project.
 * **Dummy Variable Encoding** <br>
   Using dummy variable encoding to provide numerical codes for categorical values.
   ```python
-  for i in data[categorical_cols]:
-    data[i] = data[i].astype('category')
-    data[i + "_code"] = data[i].cat.codes
-    data= data.drop(i, axis=1)
+  for i in df[categorical_cols]:
+    df[i] = df[i].astype('category')
+    df[i + "_code"] = df[i].cat.codes
+    df= df.drop(i, axis=1)
   ```
 * Splitting the dataset for training and testing purposes
 * Feature engineering
