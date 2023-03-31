@@ -191,11 +191,18 @@ related to the project.
   for i in categorical_col:
     print(df[i].value_counts(), end="\n\n")
   ```
-  
 * Checking Data Balancing for Classification
-* Binary Encoding for Categorical Variables
-* Number Encoding for Categorical
-* Dummy Variable Encoding
+* 
+* **Dummy Variable Encoding**
+  Using dummy variable encoding to provide numerical codes for categorical values.
+  ```python
+  for i in data[categorical_cols]:
+    data[i] = data[i].astype('category')
+    data[i + "_code"] = data[i].cat.codes
+    data= data.drop(i, axis=1)
+  ```
+* Splitting the dataset for training and testing purposes
+* Feature engineering
 
 #### **4.3 Train Model**
 
