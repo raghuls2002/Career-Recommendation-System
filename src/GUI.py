@@ -71,7 +71,7 @@ scrollable_frame.bind(
 canvas.create_window((0, 0), window=scrollable_frame, anchor="nw")
 canvas.configure(yscrollcommand=scrollbar.set)
 
-title = ttk.Label(scrollable_frame, font=("Arial", 20), text="Skilled-based Career Recommendation").grid(row=0, column=75, padx=10, pady=50)
+title = ttk.Label(scrollable_frame, font=("Arial", 20), text="Skilled-based Career Recommendation System").grid(row=0, column=60, padx=10, pady=50)
 
 # Add the form elements to the scrollable frame
 entry={}
@@ -83,9 +83,6 @@ for i in qList:
     entry[i] = ttk.Entry(scrollable_frame)
     label[i].grid(row=j, column=0, padx=10, pady=10, sticky="w")
     entry[i].grid(row=j, column=1, padx=10, pady=10, sticky="ew")
-#   selected_option = tk.StringVar()
- #   combobox = ttk.Combobox(root, values=dropdownList[i], textvariable=selected_option)
-  #  combobox.pack(padx=10, pady=10)
     j+=1
     
 temp = Dict["Suggested Job Role_code"];
