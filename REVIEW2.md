@@ -165,4 +165,4 @@ Let $C_{b}(x)$ be the class prediction of the bth random-forest tree. Then, $Cla
 ![](./assets/Demo/input2.PNG)
 
 #### Ouput 2:
-![](./assets/Demo/ouput2.png)
+![](./assets/Demo/output2.PNG)
