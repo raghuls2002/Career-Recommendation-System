@@ -64,7 +64,7 @@ def submit_form():
         args[i] = Dict[i][args[i]]
         print(args[i])
         
-    tk.messagebox.showinfo("Success", "Registration form submitted successfully!")
+    tk.messagebox.showinfo("Success", "Form submitted successfully!")
     
     with open("./models/rf_model.pkl","rb") as f:
         mp = pickle.load(f)
