@@ -73,7 +73,6 @@ def submit_form():
     with open("./rf_model.pkl","rb") as f:
         mp = pickle.load(f)
     
-    mp.feature_names = None
     value =  mp.predict([list(args.values())])
     print(value)
     
