@@ -17,7 +17,7 @@ import tkinter as tk
 from tkinter import ttk
 import pickle
 
-# Create the main window
+# Creating the main window
 root = tk.Tk()
 root.title("Skilled-based Career Recommendation System")
 
@@ -38,7 +38,7 @@ canvas.configure(yscrollcommand=scrollbar.set)
 
 title = ttk.Label(scrollable_frame, font=("Arial", 20), text="Skilled-based Career Recommendation System").grid(row=0, column=25, padx=10, pady=50)
 
-# Add the form elements to the scrollable frame
+# Adding the form elements to the scrollable frame
 entry={}
 label={}
 j=1
@@ -87,7 +87,7 @@ submit_button = ttk.Button(scrollable_frame, text="Submit", command=submit_form)
 submit_button.grid(row=j+1, column=1, padx=10, pady=10, sticky="e")
 
 
-# Pack the scrollbar and canvas into the main window
+# Packing the scrollbar and canvas into the main window
 scrollbar.pack(side="right", fill="y")
 canvas.pack(side="left", fill="both", expand=True)
 
