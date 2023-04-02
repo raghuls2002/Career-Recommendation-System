@@ -60,8 +60,8 @@ print("accuracy=",svm_accuracy*10)
 
 import pickle
 
-pickle.dump(forest, open("./rf_model.pkl","wb"))
-pickle.dump(dtree, open("./dt_model.pkl","wb"))
-pickle.dump(xgb, open("./xgb_model.pkl","wb"))
-pickle.dump(svm, open("./svm_model.pkl","wb"))
+pickle.dump(forest, open("./models/rf_model.pkl","wb"))
+pickle.dump(dtree, open("./models/dt_model.pkl","wb"))
+pickle.dump(xgb, open("./models/xgb_model.pkl","wb"))
+pickle.dump(svm, open("./models/svm_model.pkl","wb"))
 
