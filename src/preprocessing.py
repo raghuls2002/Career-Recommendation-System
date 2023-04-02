@@ -29,6 +29,16 @@ for i in data[categorical_cols]:
         Dict[i][data[i].iloc[j]] = data[i+"_code"].iloc[j]
     data[i]= data[i+"_code"]
     data= data.drop(i+"_code", axis=1)
-    
-    
+ 
+from sklearn.model_selection import train_test_split
 
+X=data.drop([target], axis=1)
+y=data[target]
+
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=40)
+
+from sklearn.preprocessing import StandardScaler
+
+scaler = StandardScaler()
+X_train_s = scaler.fit_transform(X_train)
+X_test_s = scaler.transform(X_test)
