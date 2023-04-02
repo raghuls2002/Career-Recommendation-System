@@ -66,7 +66,7 @@ def submit_form():
         
     tk.messagebox.showinfo("Success", "Registration form submitted successfully!")
     
-    with open("./rf_model.pkl","rb") as f:
+    with open("./models/rf_model.pkl","rb") as f:
         mp = pickle.load(f)
     
     value =  mp.predict(scaler.transform([list(args.values())]))
