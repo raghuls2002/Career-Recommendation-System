@@ -50,9 +50,9 @@ for i in cols:
     entry[i].grid(row=j, column=1, padx=10, pady=10, sticky="ew")
     j+=1
     
-temp = Dict["Suggested Job Role"];
+temp = Dict[target];
 temp = {v: k for k, v in temp.items()}
-Dict.pop("Suggested Job Role");
+Dict.pop(target);
 
 def submit_form():
     args={}
@@ -79,13 +79,15 @@ def submit_form():
     
     predicted_career=temp[round(value[0])];
     print("Recommended career is "+predicted_career)
-    outputLabel = ttk.Label(scrollable_frame, font=("Arial", 15), text='Recommended career is '+predicted_career)
-    outputLabel.grid(row=j+2, column=25, padx=10, pady=30, sticky="w")
+    output_label.config(text="Recommended career is "+predicted_career)
+
         
     
 submit_button = ttk.Button(scrollable_frame, text="Submit", command=submit_form)
 submit_button.grid(row=j+1, column=1, padx=10, pady=10, sticky="e")
 
+output_label = ttk.Label(scrollable_frame, font=("Arial", 15), text="")
+output_label.grid(row=j+2, column=25, padx=10, pady=30, sticky="w")
 
 # Packing the scrollbar and canvas into the main window
 scrollbar.pack(side="right", fill="y")
