@@ -4,13 +4,9 @@ Created on Thu Mar 30 02:11:45 2023
 
 @author: Raghul S
 """
-import preprocessing
+from preprocessing import target, Dict, cols, unique_values, scaler
 
-target = preprocessing.target
-Dict = preprocessing.Dict;
-cols = preprocessing.cols;
 cols.remove(target)
-unique_values = preprocessing.unique_values
 
 # -*- coding: utf-8 -*-
 import tkinter as tk
@@ -73,7 +69,7 @@ def submit_form():
     with open("./rf_model.pkl","rb") as f:
         mp = pickle.load(f)
     
-    value =  mp.predict([list(args.values())])
+    value =  mp.predict(scaler.transform([list(args.values())]))
     print(value)
     
     predicted_career=temp[round(value[0])];
@@ -85,7 +81,8 @@ def submit_form():
 submit_button = ttk.Button(scrollable_frame, text="Submit", command=submit_form)
 submit_button.grid(row=j+1, column=1, padx=10, pady=10, sticky="e")
 
-output_label = ttk.Label(scrollable_frame, font=("Arial", 15), text="")
+output_label = ttk.Label(scrollable_frame, font=("Arial", 18), text="")
+#output_label.configure(fg="(30, 166, 100)")
 output_label.grid(row=j+2, column=25, padx=10, pady=30, sticky="w")
 
 # Packing the scrollbar and canvas into the main window
