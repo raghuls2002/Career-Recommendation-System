@@ -17,7 +17,7 @@ import pickle
 root = tk.Tk()
 root.title("Skilled-based Career Recommendation System")
 
-# Create a canvas with a scrollbar
+# Creating a canvas with a scrollbar
 canvas = tk.Canvas(root, width=500, height=500)
 scrollbar = ttk.Scrollbar(root, orient="vertical", command=canvas.yview)
 scrollable_frame = ttk.Frame(canvas)
