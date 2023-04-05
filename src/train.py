@@ -5,10 +5,12 @@ Created on Sun Apr  2 20:49:11 2023
 @author: Raghul S
 """
 
-from preprocessing import X_train_s, y_train, X_test_s, y_test
+from preprocessing import X_train_s, y_train_encoded, X_test_s, y_test_encoded
 
 X_train = X_train_s
 X_test = X_test_s
+y_train  = y_train_encoded
+y_test = y_test_encoded
 
 from sklearn.metrics import confusion_matrix,accuracy_score
 
