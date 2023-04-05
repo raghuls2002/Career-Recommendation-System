@@ -14,6 +14,7 @@ target = "Suggested Job Role"
 cols = data.columns.tolist();
 numerical_cols = data.select_dtypes(include=np.number).columns.tolist()
 categorical_cols= data.select_dtypes(include=['object']).columns.tolist()
+categorical_cols.remove(target)
 
 unique_values={}
 for i in data:
@@ -38,6 +39,11 @@ y=data[target]
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
 
 from sklearn.preprocessing import StandardScaler
+from sklearn.preprocessing import LabelEncoder
+
+label_encoder = LabelEncoder()
+y_train_encoded= label_encoder.fit_transform(y_train)
+y_test_encoded = label_encoder.transform(y_test)
 
 scaler = StandardScaler()
 X_train_s = scaler.fit_transform(X_train)
