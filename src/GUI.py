@@ -4,7 +4,7 @@ Created on Thu Mar 30 02:11:45 2023
 
 @author: Raghul S
 """
-from preprocessing import target, Dict, cols, unique_values, scaler
+from preprocessing import target, Dict, cols, unique_values, scaler, label_encoder
 
 cols.remove(target)
 
@@ -46,9 +46,9 @@ for i in cols:
     entry[i].grid(row=j, column=1, padx=10, pady=10, sticky="ew")
     j+=1
     
-temp = Dict[target];
-temp = {v: k for k, v in temp.items()}
-Dict.pop(target);
+#temp = Dict[target];
+#temp = {v: k for k, v in temp.items()}
+#Dict.pop(target);
 
 def submit_form():
     args={}
@@ -72,9 +72,10 @@ def submit_form():
     value =  mp.predict(scaler.transform([list(args.values())]))
     print(value)
     
-    predicted_career=temp[round(value[0])];
-    print("Recommended career is "+predicted_career)
-    output_label.config(text="Recommended career is "+predicted_career)
+    #predicted_career=temp[round(value[0])];
+    predicted_career = label_encoder.inverse_transform([round(value[0])])
+    print("Recommended career is "+predicted_career[0])
+    output_label.config(text="Recommended career is "+predicted_career[0])
 
         
     
