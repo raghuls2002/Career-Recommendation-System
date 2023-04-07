@@ -6,15 +6,19 @@ Created on Sun Apr  2 20:49:11 2023
 # -*- coding: utf-8 -*-
 import pandas as pd 
 import numpy as np
+from sklearn.preprocessing import LabelEncoder
 
 data = pd.read_csv("../data/mldata.csv")
 
 target = "Suggested Job Role"
 
+data = data.drop("Interested Type of Books", axis=1)
+
 cols = data.columns.tolist();
 numerical_cols = data.select_dtypes(include=np.number).columns.tolist()
 categorical_cols= data.select_dtypes(include=['object']).columns.tolist()
 categorical_cols.remove(target)
+
 
 unique_values={}
 for i in data:
@@ -30,7 +34,7 @@ for i in data[categorical_cols]:
         Dict[i][data[i].iloc[j]] = data[i+"_code"].iloc[j]
     data[i]= data[i+"_code"]
     data= data.drop(i+"_code", axis=1)
- 
+
 from sklearn.model_selection import train_test_split
 
 X=data.drop([target], axis=1)
@@ -39,9 +43,9 @@ y=data[target]
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
 
 from sklearn.preprocessing import StandardScaler
-from sklearn.preprocessing import LabelEncoder
 
 label_encoder = LabelEncoder()
+
 y_train_encoded= label_encoder.fit_transform(y_train)
 y_test_encoded = label_encoder.transform(y_test)
 
