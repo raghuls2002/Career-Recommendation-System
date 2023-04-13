@@ -40,7 +40,6 @@ def register():
     predicted_career = label_encoder.inverse_transform([round(value[0])])
     print("Recommended career is "+predicted_career[0])
             
-    # Here, you can add your code to insert the data into a database or perform any other action you'd like
     return render_template('success.html', predicted_career=predicted_career)
 
 if __name__ == '__main__':
