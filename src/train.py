@@ -15,19 +15,26 @@ y_test = y_test_encoded
 from sklearn.metrics import confusion_matrix,accuracy_score
 
 from sklearn.ensemble import RandomForestRegressor
+from sklearn.metrics import r2_score, mean_squared_error
 
 forest=RandomForestRegressor(random_state=10, n_estimators = 5)
 forest.fit(X_train, y_train)
 
-"""
 rf_y_pred = forest.predict(X_test)
-rf_cm = confusion_matrix(y_test,rf_y_pred)
-rf_accuracy = accuracy_score(y_test,rf_y_pred)
-print("\n\nDecision Tree Classifier : ")
-print("\nconfusion matrics=",rf_cm)
-print("  ")
-print("accuracy=",rf_accuracy*10)
-"""
+
+print("\nDecision Tree Classifier : \n")
+
+# calculating R2 score
+r2 = r2_score(y_test, rf_y_pred)
+print("R2 score:", r2)
+
+# calculating mean squared error
+mse = mean_squared_error(y_test,rf_y_pred)
+print("Mean squared error:", mse)
+
+# calculating root mean squared error
+rmse = mean_squared_error(y_test,rf_y_pred, squared=False)
+print("Root mean squared error:", rmse)
 
 from sklearn.tree import DecisionTreeClassifier
 
