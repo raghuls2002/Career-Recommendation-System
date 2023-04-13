@@ -159,6 +159,7 @@ Splitting the dataset is the process of dividing a given dataset into two or mor
   
   
 #### **Label Encoding Target Data** <br>
+Label encoding target data refers to the process of converting the categorical labels in the target variable of a machine learning problem into numerical values. This is often necessary because our machine learning algorithms can only handle numerical data as input.
 ```python
 from sklearn.preprocessing import LabelEncoder
 
