@@ -16,9 +16,18 @@ from sklearn.metrics import confusion_matrix,accuracy_score
 
 from sklearn.ensemble import RandomForestRegressor
 
-forest=RandomForestRegressor(random_state=10)
+forest=RandomForestRegressor(random_state=10, n_estimators = 5)
 forest.fit(X_train, y_train)
+
+"""
 rf_y_pred = forest.predict(X_test)
+rf_cm = confusion_matrix(y_test,rf_y_pred)
+rf_accuracy = accuracy_score(y_test,rf_y_pred)
+print("\n\nDecision Tree Classifier : ")
+print("\nconfusion matrics=",rf_cm)
+print("  ")
+print("accuracy=",rf_accuracy*10)
+"""
 
 from sklearn.tree import DecisionTreeClassifier
 
