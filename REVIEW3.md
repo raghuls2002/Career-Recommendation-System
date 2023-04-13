@@ -74,6 +74,7 @@ Predicting a career without providing a clear roadmap on how to proceed may leav
 ### **Proposed System**
 
 The proposed system will use a dataset consisting of various attributes such as education, experience, skills, interests, and personality traits of individuals to predict their future career path. The system will be designed to leverage the power of machine learning algorithms, specifically random forest, to predict the most suitable career path for an individual based on their skill set. Random forest is a well-established ML algorithm that has been widely used for classification and regression problems. It has proven to be effective in handling high-dimensional data, reducing overfitting, and improving prediction accuracy.
+
 ![](./assets/proposed_system.PNG)
 
 ## Methodology
@@ -312,19 +313,19 @@ The web app is built using Flash web framework and is host on 'localhost:5000'. 
 
 Figure .1: Form gets the input values
 
-![](../assets/Demo1.1/input1.PNG)
+![](./assets/Demo1.1/input1.PNG)
 
 Figure .2: Displaying the recommended career
 
-![](../assets/Demo1.1/output1.PNG)
+![](./assets/Demo1.1/output1.PNG)
 
 Figure .3: Form gets the input values
 
-![](../assets/Demo1.1/input2.PNG)
+![](./assets/Demo1.1/input2.PNG)
 
 Figure .4: Form gets the input values
 
-![](../assets/Demo1.1/output2.PNG)
+![](./assets/Demo1.1/output2.PNG)
 
 
 
