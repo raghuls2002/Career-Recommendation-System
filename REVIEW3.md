@@ -149,6 +149,16 @@ Splitting the dataset is the process of dividing a given dataset into two or mor
   y=data[target]
   X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)
   ```
+#### **Label Encoding Target Data** <br>
+```python
+from sklearn.preprocessing import LabelEncoder
+
+label_encoder = LabelEncoder()
+
+y_train_encoded= label_encoder.fit_transform(y_train)
+y_test_encoded = label_encoder.transform(y_test)
+```
+
 #### **Feature Scaling** <br>
 Feature scaling is the process of transforming numerical data in a dataset to a common scale, without distorting differences in the ranges of values. This can help improve the performance and accuracy of machine learning algorithms that are sensitive to the scale of the input features. It involves converting the values of the features in a dataset so that they all fall within a similar range, typically between 0 and 1 or -1 and 1, making them easier to compare and analyze. This can be achieved using various techniques such as normalization, standardization, or rescaling.
   ```python
@@ -199,10 +209,7 @@ Let $C_{b}(x)$ be the class prediction of the bth random-forest tree. Then, $$Cl
 ### **Building ML Model** 
 
 ```python
-from sklearn.metrics import confusion_matrix,accuracy_score
-
 from sklearn.ensemble import RandomForestRegressor
-from sklearn.metrics import r2_score, mean_squared_error
 
 forest=RandomForestRegressor(random_state=10, n_estimators = 5)
 forest.fit(X_train, y_train)
@@ -213,6 +220,8 @@ rf_y_pred = forest.predict(X_test)
 ### **Evaluating Model**
 
 ```python
+from sklearn.metrics import r2_score, mean_squared_error
+
 # calculating R2 score
 r2 = r2_score(y_test, rf_y_pred)
 print("R2 score:", r2)
@@ -225,6 +234,42 @@ print("Mean squared error:", mse)
 rmse = mean_squared_error(y_test,rf_y_pred, squared=False)
 print("Root mean squared error:", rmse)
 ```
+
+```
+Decision Tree Classifier : 
+
+R2 score: -0.27744227297749613
+Mean squared error: 15.37494569152788
+Root mean squared error: 3.921089860169986
+```
+
+### **Saving ML Model**
+
+```python
+import pickle
+
+pickle.dump(forest, open("./models/rf_model.pkl","wb"))
+```
+
+### **Loading ML Model**
+
+```python
+import pickle
+
+with open("./models/rf_model.pkl","rb") as f:
+     mp = pickle.load(f)
+```
+
+## **Making Prediction based on user entered values**
+
+```python
+value =  mp.predict(scaler.transform([list(args.values())]))
+    
+predicted_career = label_encoder.inverse_transform([round(value[0])])
+print("Recommended career is "+predicted_career[0])
+```
+
+<br>
 
 ## **Results and Discussion**
 
