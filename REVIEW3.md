@@ -4,7 +4,7 @@
 **Class Nbr :** VL2022230505138<br>
 **Faculty Name :** Manoov R <br>
 
-# **Review - 3** : **Skill-based Career Recommendation System**
+# **Review - 3** : **Skill-based Career Recommendation System using Random Forest Classifier**
 
 <br>
 
