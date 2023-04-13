@@ -23,7 +23,6 @@ analyses the skills to recommend a suitable job for
 the candidate. The solution is to design a system
 that reads a resume and their skills.
 
-<br>
 
 ## **Introduction**
 
@@ -42,7 +41,6 @@ who want to know about their suitable jobs and to improve themselves with both s
 hard skills. It will be helpful to them by not wasting their time searching for jobs. They can also
 grow their skills in their domain and grow faster in their domain.
 
-<br>
 
 ## **Literature Survey**
 
@@ -55,7 +53,6 @@ grow their skills in their domain and grow faster in their domain.
 |[An artificial neural network approach in predicting career strand of incoming senior high school students](https://iopscience.iop.org/article/10.1088/1742-6596/1245/1/012005/meta#references)| 2018 | Artificial Neural Network (ANN) | With an accuracy of 74.1%, this study built a predictive model that can forecast an incoming senior high school student's choice of strand. This study demonstrated the application of the discretization method to improve prediction accuracy.|
 |[Career Choice Prediction Based on Campus Big Data—Mining the Potential Behavior of College Students](https://www.researchgate.net/publication/340838530_Career_Choice_Prediction_Based_on_Campus_Big_Data-Mining_the_Potential_Behavior_of_College_Students)| 2020 | XGBoost | To forecast students' profession choices, this study proposed the Approach Cluster Centres Based On XGBOOST (ACCBOX) model. By analysing behavioural data from over four thousand students, the experimental results show that this techniques outperforms existing techniques.|
 
-<br>
 
 ## **Architecture**
 
@@ -80,13 +77,13 @@ The proposed system will use a dataset consisting of various attributes such as 
 
 ![](./assets/proposed_system.PNG)
 
-<br>
 
 ## Methodology
 
-### **Data Collection**
+### **Data Collection ([mldata.csv](https://github.com/raghuls2002/Weasel/blob/main/data/mldata.csv))**
 
-Questioning students and receiving responses in the form of yes or no may not provide accurate data for predicting a student's career path. To accurately predict a student's career, many parameters such as knowledge in different subjects, specializations, programming skills, hackathons, workshops, certifications, and preferred courses are required. To train a model for this purpose, a dataset with over 6,500 records that includes all necessary fields has been collected. The input data is obtained in the form of ratings for various fields of computer science students. Asking students to rate themselves in required fields is the best way to get precise knowledge about their abilities.
+Questioning students and receiving responses in the form of yes or no may not provide accurate data for predicting a student's career path. To accurately predict a student's career, many parameters such as knowledge in different subjects, specializations, programming skills, hackathons, workshops, certifications, and preferred courses are required. To train a model for this purpose, a [dataset] with over 6,500 records that includes all necessary fields has been collected. The input data is obtained in the form of ratings for various fields of computer science students. Asking students to rate themselves in required fields is the best way to get precise knowledge about their abilities.
+
 
 ### **Data Pre-Processing**
 
@@ -115,6 +112,8 @@ Importing python libraries required for data pre-processing and loading the requ
        'Introvert', 'Suggested Job Role'],
       dtype='object')
 ```
+
+
 #### **Finding numerical and categorical features**<br>
 
   ```python
@@ -129,11 +128,14 @@ Importing python libraries required for data pre-processing and loading the requ
   List of Categorical features: <br>
   ['self-learning capability?', 'Extra-courses did', 'certifications', 'workshops', 'reading and writing skills', 'memory capability score', 'Interested subjects', 'interested career area ', 'Type of company want to settle in?', 'Taken inputs from seniors or elders', 'Interested Type of Books', 'Management or Technical', 'hard/smart worker', 'worked in teams ever?', 'Introvert', 'Suggested Job Role']
  ``` 
+ 
+ 
 #### **Checking missing values**<br>
   In order to check null values in Pandas DataFrame, we use isnull() function this function return dataframe of Boolean values which are True for NaN values.
    ```python
   df.isnull().sum(axis=0)
   ```
+
 
 #### **Dummy value encoding** <br>
 Dummy variable encoding, also known as one-hot encoding, is a technique used in data analysis and machine learning to convert categorical data into numerical data that can be used in statistical and machine learning models.
@@ -145,6 +147,8 @@ Using this technique, we avoid having the model interpret the categorical variab
     data[i + "_code"] = data[i].cat.codes
     data= data.drop(i, axis=1)
   ```
+  
+  
 #### **Splitting the dataset** <br>
 Splitting the dataset is the process of dividing a given dataset into two or more subsets for training and testing purposes in machine learning or data analysis. Here, the dataset is divided into two parts: the training set and the test set. The training set is used to build the machine learning model, while the test set is used to evaluate the performance of the model on new, unseen data.
   ```python
@@ -154,6 +158,8 @@ Splitting the dataset is the process of dividing a given dataset into two or mor
   y=data[target]
   X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)
   ```
+  
+  
 #### **Label Encoding Target Data** <br>
 ```python
 from sklearn.preprocessing import LabelEncoder
@@ -301,13 +307,16 @@ predicted_career = label_encoder.inverse_transform([round(value[0])])
 print("Recommended career is "+predicted_career[0])
 ```
 
-<br>
 
 ## **Results and Discussion**
 
+Our results indicate that a skill-based career recommendation system using a random forest classifier can be highly accurate and useful for individuals seeking career guidance. The system can help job seekers identify career paths that align with their skills, interests, and experience. Employers can also use this system to identify potential candidates with the required skills for specific job roles.
 
+One limitation of our study is that we only focused on a limited number of industries, and future studies could include a broader range of industries.
 
 ## **Conclusion**
+
+In conclusion, our study demonstrates the effectiveness of a skill-based career recommendation system using a random forest classifier. The system can provide personalized career guidance for individuals and assist employers in identifying potential candidates for job roles. The results of our study could have significant implications for the field of career development and job matching.
 
 ## **References**
 
