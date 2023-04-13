@@ -4,6 +4,7 @@ Created on Fri Apr  7 20:16:08 2023
 
 @author: Raghul S
 """
+
 from preprocessing import target, Dict, cols, unique_values, scaler, label_encoder
 from flask import Flask, render_template, request
 import pickle
