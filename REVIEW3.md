@@ -59,15 +59,15 @@ Previously, the questionnaire method was used to forecast a student's career. Ho
 
 ### **Existing System**
 
-There are multiple models available in the market to address the same problem, each with its own advantages and disadvantages. Some existing systems use these methods as input.
+There are multiple models available in the market to address the same problem, each with its own advantages and disadvantages. Some existing systems use these methods as input: 
 
-* **Forecasting using Academic Grades**
+* **Forecasting using Academic Grades** <br> 
 Using student academic grades as input for forecasting may not be efficient as individual grades depend on factors such as college, exam models, paper evaluation, and so on.
 
-* **Forecasting using YES/NO Questionnaire**
+* **Forecasting using YES/NO Questionnaire** <br>
 Asking a questionnaire with various required fields and receiving a yes/no answer may confuse students. For instance, in a particular course, a student may only have basic knowledge, and hence, not know whether to answer yes or no. In such cases, the student might not provide input, leading to incorrect predictions.
 
-* **Lack of Clear Career Roadmap for Forecasting**
+* **Lack of Clear Career Roadmap for Forecasting** <br>
 Predicting a career without providing a clear roadmap on how to proceed may leave students in a dilemma. Predictions with a clear roadmap can help students understand their career path.
 
 ### **Proposed System**
