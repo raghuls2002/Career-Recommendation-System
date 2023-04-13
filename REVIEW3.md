@@ -74,7 +74,7 @@ Predicting a career without providing a clear roadmap on how to proceed may leav
 
 The proposed system will use a dataset consisting of various attributes such as education, experience, skills, interests, and personality traits of individuals to predict their future career path. The system will be designed to leverage the power of machine learning algorithms, specifically random forest, to predict the most suitable career path for an individual based on their skill set. Random forest is a well-established ML algorithm that has been widely used for classification and regression problems. It has proven to be effective in handling high-dimensional data, reducing overfitting, and improving prediction accuracy.
 
-![](https://github.com/raghuls2002/Weasel/blob/f57eecd90ae74e9d497eddc3d239082dcc71ea78/assets/proposed_system.PNG)
+![](./assets/proposed_system.PNG)
 
 ## Methodology
 
