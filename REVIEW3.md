@@ -25,6 +25,9 @@ that reads a resume and their skills.
 
 <br>
 
+## **Related Works**
+
+
 ## **Introduction**
 
 A student may find it challenging to choose the correct job route because they are going
@@ -44,10 +47,20 @@ grow their skills in their domain and grow faster in their domain.
 
 <br>
 
+## **Literature Survey**
 
-## **Literature Review**
+## Literature Survey
 
-### **Introduction**
+| Study | Year | Methodology | Results |
+|-------|------|-------------|---------|
+| [Student Future Prediction Using Machine Learning](https://www.researchgate.net/publication/332408552_Student_Future_Prediction_Using_Machine_Learning)| 2019 | Linear Regression, Decision Tree Regression, Random Tree classifier |The system  will  help  student  used  to  predict  the suitable  course. The system can facilitate the students, as it will guide them to take appropriate decision while choosing the stream  as  his/her  career.|
+|[ Career Prediction System](https://ijsrst.com/IJSRST218411)| 2021 | XGBoost | Career Prediction System developed using machine learning is very effective in predicting correct career based on the student skills possessed in required fields. |
+| [Random Forests and Decision Trees](https://www.researchgate.net/publication/259235118_Random_Forests_and_Decision_Trees)| 2012 | Random Forests, Decision Trees | From the results, it can be concluded that the Random Forest achieves increased classification performance and yields results that are accurate and precise in the cases of large number of instances. These scenarios also cover the missing values problem in the datasets and thus besides accuracy, it also overcomes the over-fitting problem generated due to missing values in the datasets |
+|[Student Career Prediction Using Decision Tree and Random Forest Machine Learning Classifiers](https://eudl.eu/pdf/10.4108/eai.7-6-2021.2308621)| 2020| Random Forest, Decision Tree | This research work forecast the undergraduate students’ career by using RF and DT machine learning classifier. The classifiers are implemented by using Python programming languages. Final output shows that Random Forest classifier produces better result than the Decision Tree classifier. |
+
+<br>
+
+## **Architecture**
 
 Previously, the questionnaire method was used to forecast a student's career. However, it is a time-consuming process, and it is difficult to determine the status of students' opinions. Various computing techniques are used to forecast the student's future career. In this literature review, we aim to synthesize existing research on skill-based career recommendation systems. We will also compare the accuracy of various ML algorithms such as SVM (Scalar Vector Machine), RF (Random Forest), XGB (XGBClassifier ), DT(Decision Tree) and Linear Regression.
 
@@ -70,11 +83,13 @@ Predicting a career without providing a clear roadmap on how to proceed may leav
 
 ![](./assets/proposed_system.PNG)
 
-#### **Data Collection**
+## Methodology
+
+### **Data Collection**
 
 Questioning students and receiving responses in the form of yes or no may not provide accurate data for predicting a student's career path. To accurately predict a student's career, many parameters such as knowledge in different subjects, specializations, programming skills, hackathons, workshops, certifications, and preferred courses are required. To train a model for this purpose, a dataset with over 6,500 records that includes all necessary fields has been collected. The input data is obtained in the form of ratings for various fields of computer science students. Asking students to rate themselves in required fields is the best way to get precise knowledge about their abilities.
 
-#### **Data Pre-Processing**
+### **Data Pre-Processing**
 
 #### **Importing libraries and loading data** <br>
 
@@ -144,7 +159,7 @@ Feature scaling is the process of transforming numerical data in a dataset to a 
   X_test_s = scaler.transform(X_test)
   ```
 
-#### **Algorithms used**
+### **Alogrithms used
 
 #### **Decision Tree**
 
@@ -182,15 +197,11 @@ To make a prediction at a new point x:
 $$Regression: f_{rf}^{B}(x) = \frac{1}{B}{\sum_{b = 1}^{B}}{T_{b}(x)}$$
 Let $C_{b}(x)$ be the class prediction of the bth random-forest tree. Then, $$Classification: C_{rf}^{B}(x) = majority vote (C_{b})_{1}^{B}$$
 
-## Literature Survey
+## **Results and Discussion**
 
-| Study | Year | Methodology | Results |
-|-------|------|-------------|---------|
-| [Student Future Prediction Using Machine Learning](https://www.researchgate.net/publication/332408552_Student_Future_Prediction_Using_Machine_Learning)| 2019 | Linear Regression, Decision Tree Regression, Random Tree classifier |The system  will  help  student  used  to  predict  the suitable  course. The system can facilitate the students, as it will guide them to take appropriate decision while choosing the stream  as  his/her  career.|
-|[ Career Prediction System](https://ijsrst.com/IJSRST218411)| 2021 | XGBoost | Career Prediction System developed using machine learning is very effective in predicting correct career based on the student skills possessed in required fields. |
-| [Random Forests and Decision Trees](https://www.researchgate.net/publication/259235118_Random_Forests_and_Decision_Trees)| 2012 | Random Forests, Decision Trees | From the results, it can be concluded that the Random Forest achieves increased classification performance and yields results that are accurate and precise in the cases of large number of instances. These scenarios also cover the missing values problem in the datasets and thus besides accuracy, it also overcomes the over-fitting problem generated due to missing values in the datasets |
-|[Student Career Prediction Using Decision Tree and Random Forest Machine Learning Classifiers](https://eudl.eu/pdf/10.4108/eai.7-6-2021.2308621)| 2020| Random Forest, Decision Tree | This research work forecast the undergraduate students’ career by using RF and DT machine learning classifier. The classifiers are implemented by using Python programming languages. Final output shows that Random Forest classifier produces better result than the Decision Tree classifier. |
+## **Conclusion**
 
+## **References**
 ## **Demonstration**
 #### Input 1:
 ![](./assets/Demo/input1.PNG)
