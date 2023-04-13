@@ -101,8 +101,10 @@ Importing python libraries required for data pre-processing and loading the requ
     import seaborn as sns
     df = data.read_csv('./data/mldata.csv')
     print("Columns in our dataset:\n" , df.columns)
-  ```
-   **Columns in our dataset:** <br> Index(['Logical quotient rating', 'hackathons', 'coding skills rating',
+  ``` 
+  ###### **Output:**
+```
+   Columns in our dataset: Index(['Logical quotient rating', 'hackathons', 'coding skills rating',
        'public speaking points', 'self-learning capability?',
        'Extra-courses did', 'certifications', 'workshops',
        'reading and writing skills', 'memory capability score',
@@ -112,18 +114,21 @@ Importing python libraries required for data pre-processing and loading the requ
        'Management or Technical', 'hard/smart worker', 'worked in teams ever?',
        'Introvert', 'Suggested Job Role'],
       dtype='object')
-      
-#### **Finding numerical and categorical features**
+```
+#### **Finding numerical and categorical features**<br>
+
   ```python
   print("\nList of Numerical features: \n" , data.select_dtypes(include=np.number).columns.tolist())
   print("\nList of Categorical features: \n" , data.select_dtypes(include=['object']).columns.tolist())
+  ```
+###### **Output:**
   ```
   List of Numerical features: <br>
  ['Logical quotient rating', 'hackathons', 'coding skills rating', 'public speaking points']
 
   List of Categorical features: <br>
   ['self-learning capability?', 'Extra-courses did', 'certifications', 'workshops', 'reading and writing skills', 'memory capability score', 'Interested subjects', 'interested career area ', 'Type of company want to settle in?', 'Taken inputs from seniors or elders', 'Interested Type of Books', 'Management or Technical', 'hard/smart worker', 'worked in teams ever?', 'Introvert', 'Suggested Job Role']
-  
+ ``` 
 #### **Checking missing values**<br>
   In order to check null values in Pandas DataFrame, we use isnull() function this function return dataframe of Boolean values which are True for NaN values.
    ```python
@@ -206,35 +211,54 @@ To make a prediction at a new point x:
 $$Regression: f_{rf}^{B}(x) = \frac{1}{B}{\sum_{b = 1}^{B}}{T_{b}(x)}$$
 Let $C_{b}(x)$ be the class prediction of the bth random-forest tree. Then, $$Classification: C_{rf}^{B}(x) = majority vote (C_{b})_{1}^{B}$$
 
-### **Building ML Model** 
+### **Building and training ML Model** 
 
+#### **Intantiating the Model**
+
+Creating random forest classifier object called 'forest'. We are using the hyperparameters : random_states & n_extimators.
 ```python
 from sklearn.ensemble import RandomForestRegressor
 
 forest=RandomForestRegressor(random_state=10, n_estimators = 5)
+```
+#### **Fitting the Model**
+
+Once we have instantiated the classifier, you can fit the model to the training data using the fit() method. This method takes two arguments: the training features (X_train) and the corresponding training labels (y_train).
+
+```python
 forest.fit(X_train, y_train)
 
 rf_y_pred = forest.predict(X_test)
 ```
+After training the model, you can use it to make predictions on new data using the predict()
 
 ### **Evaluating Model**
 
-```python
-from sklearn.metrics import r2_score, mean_squared_error
+Three following metrics were used for evaluating the performance of the regression model: 
 
-# calculating R2 score
-r2 = r2_score(y_test, rf_y_pred)
-print("R2 score:", r2)
+* r2 score, also known as the coefficient of determination, is a metric that measures the proportion of variance in the target variable (y) that can be explained by  the independent variables (X) used in the model. It is a value between 0 and 1, where 1 indicates a perfect fit and 0 indicates that the model does not explain any of the variance in the target variable.
+  ```python
+  from sklearn.metrics import r2_score, mean_squared_error
 
-# calculating mean squared error
-mse = mean_squared_error(y_test,rf_y_pred)
-print("Mean squared error:", mse)
+  # calculating R2 score
+  r2 = r2_score(y_test, rf_y_pred)
+  print("R2 score:", r2)
+  ```
+* MSE (Mean Squared Error) is a metric that measures the average squared difference between the true values of the target variable and the predicted values. It is a popular metric for evaluating the performance of regression models because it penalizes large errors more heavily than small errors.
 
-# calculating root mean squared error
-rmse = mean_squared_error(y_test,rf_y_pred, squared=False)
-print("Root mean squared error:", rmse)
-```
+  ```python
+  # calculating mean squared error
+  mse = mean_squared_error(y_test,rf_y_pred)
+  print("Mean squared error:", mse)
+  ```
 
+* RMSE (Root Mean Squared Error) is simply the square root of MSE, and it is also a popular metric for evaluating the performance of regression models. It is more interpretable than MSE because it is in the same units as the target variable.
+  ```python
+  # calculating root mean squared error
+  rmse = mean_squared_error(y_test,rf_y_pred, squared=False)
+  print("Root mean squared error:", rmse)
+  ```
+###### **Output**
 ```
 Decision Tree Classifier : 
 
@@ -245,6 +269,10 @@ Root mean squared error: 3.921089860169986
 
 ### **Saving ML Model**
 
+Pickle is a Python module used for serializing and de-serializing Python object structures, including machine learning models. Serializing is the process of converting an object's state to a byte stream, while de-serializing is the reverse process of reconstructing the object from the serialized state.
+
+When it comes to machine learning models, Pickle can be used to save a trained model to a file so that it can be loaded later and used for making predictions or further training. The saved model can be used for deployment, sharing or archival purposes.
+
 ```python
 import pickle
 
@@ -253,6 +281,8 @@ pickle.dump(forest, open("./models/rf_model.pkl","wb"))
 
 ### **Loading ML Model**
 
+Loading a machine learning model using Pickle is a straightforward process that involves de-serializing the saved object back into a Python object that can be used for making predictions on new data.
+
 ```python
 import pickle
 
@@ -260,7 +290,9 @@ with open("./models/rf_model.pkl","rb") as f:
      mp = pickle.load(f)
 ```
 
-## **Making Prediction based on user entered values**
+### **Making Prediction based on user entered values**
+
+The user-entered values '**args**' undergo dummy variable encoding and standard feature scaling. Then, they are used to make predictions with the help of **predict()** function. The resultant value is decoded using **inverse_transform()**  and rounded off using **round()** to generate a user-readable value.
 
 ```python
 value =  mp.predict(scaler.transform([list(args.values())]))
@@ -273,18 +305,9 @@ print("Recommended career is "+predicted_career[0])
 
 ## **Results and Discussion**
 
+
+
 ## **Conclusion**
 
 ## **References**
-## **Demonstration**
-#### Input 1:
-![](./assets/Demo/input1.PNG)
 
-#### Ouput 1:
-![](./assets/Demo/output1.PNG)
-
-#### Input 2:
-![](./assets/Demo/input2.PNG)
-
-#### Ouput 2:
-![](./assets/Demo/output2.png)
