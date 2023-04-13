@@ -25,9 +25,6 @@ that reads a resume and their skills.
 
 <br>
 
-## **Related Works**
-
-
 ## **Introduction**
 
 A student may find it challenging to choose the correct job route because they are going
@@ -49,14 +46,14 @@ grow their skills in their domain and grow faster in their domain.
 
 ## **Literature Survey**
 
-## Literature Survey
-
 | Study | Year | Methodology | Results |
 |-------|------|-------------|---------|
+|[ Career Prediction System](https://ijsrst.com/IJSRST218411)| 2021 | XGBoost | Career Prediction System developed using machine learning is very effective in predicting correct career based on the student skills possessed in required fields. |
 | [Student Future Prediction Using Machine Learning](https://www.researchgate.net/publication/332408552_Student_Future_Prediction_Using_Machine_Learning)| 2019 | Linear Regression, Decision Tree Regression, Random Tree classifier |The system  will  help  student  used  to  predict  the suitable  course. The system can facilitate the students, as it will guide them to take appropriate decision while choosing the stream  as  his/her  career.|
 |[ Career Prediction System](https://ijsrst.com/IJSRST218411)| 2021 | XGBoost | Career Prediction System developed using machine learning is very effective in predicting correct career based on the student skills possessed in required fields. |
 | [Random Forests and Decision Trees](https://www.researchgate.net/publication/259235118_Random_Forests_and_Decision_Trees)| 2012 | Random Forests, Decision Trees | From the results, it can be concluded that the Random Forest achieves increased classification performance and yields results that are accurate and precise in the cases of large number of instances. These scenarios also cover the missing values problem in the datasets and thus besides accuracy, it also overcomes the over-fitting problem generated due to missing values in the datasets |
-|[Student Career Prediction Using Decision Tree and Random Forest Machine Learning Classifiers](https://eudl.eu/pdf/10.4108/eai.7-6-2021.2308621)| 2020| Random Forest, Decision Tree | This research work forecast the undergraduate students’ career by using RF and DT machine learning classifier. The classifiers are implemented by using Python programming languages. Final output shows that Random Forest classifier produces better result than the Decision Tree classifier. |
+|[An artificial neural network approach in predicting career strand of incoming senior high school students](https://iopscience.iop.org/article/10.1088/1742-6596/1245/1/012005/meta#references)| 2018 | Artificial Neural Network (ANN) | With an accuracy of 74.1%, this study built a predictive model that can forecast an incoming senior high school student's choice of strand. This study demonstrated the application of the discretization method to improve prediction accuracy.|
+|[Career Choice Prediction Based on Campus Big Data—Mining the Potential Behavior of College Students](https://www.researchgate.net/publication/340838530_Career_Choice_Prediction_Based_on_Campus_Big_Data-Mining_the_Potential_Behavior_of_College_Students)| 2020 | XGBoost | To forecast students' profession choices, this study proposed the Approach Cluster Centres Based On XGBOOST (ACCBOX) model. By analysing behavioural data from over four thousand students, the experimental results show that this techniques outperforms existing techniques.|
 
 <br>
 
@@ -69,7 +66,7 @@ Previously, the questionnaire method was used to forecast a student's career. Ho
 There are multiple models available in the market to address the same problem, each with its own advantages and disadvantages. Some existing systems use these methods as input.
 
 * **Forecasting using Academic Grades**
-Using student academic grades [1,2] as input for forecasting may not be efficient as individual grades depend on factors such as college, exam models, paper evaluation, and so on.
+Using student academic grades as input for forecasting may not be efficient as individual grades depend on factors such as college, exam models, paper evaluation, and so on.
 
 * **Forecasting using YES/NO Questionnaire**
 Asking a questionnaire with various required fields and receiving a yes/no answer may confuse students. For instance, in a particular course, a student may only have basic knowledge, and hence, not know whether to answer yes or no. In such cases, the student might not provide input, leading to incorrect predictions.
