@@ -76,9 +76,11 @@ Predicting a career without providing a clear roadmap on how to proceed may leav
 
 ### **Proposed System**
 
-#### **Flow chart**
+The proposed system will use a dataset consisting of various attributes such as education, experience, skills, interests, and personality traits of individuals to predict their future career path. The system will be designed to leverage the power of machine learning algorithms, specifically random forest, to predict the most suitable career path for an individual based on their skill set. Random forest is a well-established ML algorithm that has been widely used for classification and regression problems. It has proven to be effective in handling high-dimensional data, reducing overfitting, and improving prediction accuracy.
 
 ![](./assets/proposed_system.PNG)
+
+<br>
 
 ## Methodology
 
@@ -156,7 +158,7 @@ Feature scaling is the process of transforming numerical data in a dataset to a 
   X_test_s = scaler.transform(X_test)
   ```
 
-### **Alogrithms used
+### Alogrithms used
 
 #### **Decision Tree**
 
@@ -193,6 +195,36 @@ The RF approach can be explained as the following steps:
 To make a prediction at a new point x:
 $$Regression: f_{rf}^{B}(x) = \frac{1}{B}{\sum_{b = 1}^{B}}{T_{b}(x)}$$
 Let $C_{b}(x)$ be the class prediction of the bth random-forest tree. Then, $$Classification: C_{rf}^{B}(x) = majority vote (C_{b})_{1}^{B}$$
+
+### **Building ML Model** 
+
+```python
+from sklearn.metrics import confusion_matrix,accuracy_score
+
+from sklearn.ensemble import RandomForestRegressor
+from sklearn.metrics import r2_score, mean_squared_error
+
+forest=RandomForestRegressor(random_state=10, n_estimators = 5)
+forest.fit(X_train, y_train)
+
+rf_y_pred = forest.predict(X_test)
+```
+
+### **Evaluating Model**
+
+```python
+# calculating R2 score
+r2 = r2_score(y_test, rf_y_pred)
+print("R2 score:", r2)
+
+# calculating mean squared error
+mse = mean_squared_error(y_test,rf_y_pred)
+print("Mean squared error:", mse)
+
+# calculating root mean squared error
+rmse = mean_squared_error(y_test,rf_y_pred, squared=False)
+print("Root mean squared error:", rmse)
+```
 
 ## **Results and Discussion**
 
