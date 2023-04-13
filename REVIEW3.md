@@ -264,13 +264,8 @@ Three following metrics were used for evaluating the performance of the regressi
   print("Root mean squared error:", rmse)
   ```
 ###### **Output**
-```
-Decision Tree Classifier : 
 
-R2 score: -0.27744227297749613
-Mean squared error: 15.37494569152788
-Root mean squared error: 3.921089860169986
-```
+![](./assets/ml_evaluation.PNG)
 
 ### **Saving ML Model**
 
@@ -323,12 +318,41 @@ Figure .3: Form gets the input values
 
 ![](./assets/Demo1.1/input2.PNG)
 
-Figure .4: Form gets the input values
+Figure .4: Displaying the recommended career
 
 ![](./assets/Demo1.1/output2.PNG)
 
+We also visualized the structure of the Random forest model consisting of 5 Decision Trees using the following code: 
+```python
+from sklearn import tree
 
+for i in range(5):
+    plt.figure(figsize=(15,10))
+    tree.plot_tree(forest.estimators_[i], filled=True)
+    plt.show()
+```
 
+##### Output 
+
+Figure 5. Decision Tree no. 1
+
+![](./src/static/rf_1.png)
+
+Figure 6. Decision Tree no. 2
+
+![](./src/static/rf_2.png)
+
+Figure 7. Decision Tree no. 3
+
+![](./src/static/rf_3.png)
+
+Figure 8. Decision Tree no. 4
+
+![](./src/static/rf_4.png)
+
+Figure 9. Decision Tree no. 5
+
+![](./src/static/rf_5.png)
 
 Our results indicate that a skill-based career recommendation system using a random forest classifier can be highly accurate and useful for individuals seeking career guidance. The system can help job seekers identify career paths that align with their skills, interests, and experience. Employers can also use this system to identify potential candidates with the required skills for specific job roles.
 
