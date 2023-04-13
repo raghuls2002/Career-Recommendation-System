@@ -3,11 +3,54 @@
 <head>
     <title>Registration Successful</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <style>
+        .container
+        {
+           width: 50%;
+        }
+        img
+        {
+            width: 100%;
+        }
+        h2 , p
+        {
+            text-align: center;
+        }
+        p
+        {
+        p {
+          font-size: 20px;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
-        <h1>Form successfully submitted</h1>
-        <p>You recommended career is {{ predicted_career[0] }}!</p>
+        <h1> Recommeded career: </h1>
+        <p>Your suggested job role is {{ predicted_career[0] }}!</p>
+    </div>
+    <div class="container">
+        <h2>Correlation matrix: </h2>
+        <img src="{{ url_for('static', filename='correlation_matrix.png') }}" alt="correlation matrix">
+    </div>
+    <div class="container">
+        <h2>Decision Tree 1: </h2>
+        <img src="{{ url_for('static', filename='rf_1.png') }}" alt="Decision tree 1">
+    </div>
+    <div class="container">
+        <h2>Decision Tree 2: </h2>
+        <img src="{{ url_for('static', filename='rf_2.png') }}" alt="Decision tree 2">
+    </div>
+    <div class="container">
+        <h2>Decision Tree 3: </h2>
+        <img src="{{ url_for('static', filename='rf_3.png') }}" alt="Decision tree 3">
+    </div>
+    <div class="container">
+        <h2>Decision Tree 4: </h2>
+        <img src="{{ url_for('static', filename='rf_4.png') }}" alt="Decision tree 4">
+    </div>
+    <div class="container">
+        <h2>Decision Tree 5: </h2>
+        <img src="{{ url_for('static', filename='rf_5.png') }}" alt="Decision tree 5">
     </div>
 </body>
 </html>
